@@ -337,7 +337,7 @@ header .widthMargin{
 }
 
 .navbar-light .navbar-nav .nav-link{
-    color: #002575;
+    color: #5C5E5E;
     text-transform: uppercase;
     padding: 1em 0 .5em 0;
     margin-right: 0em;
@@ -378,12 +378,48 @@ header .redes{
     padding-bottom: 2em;
 }
 
-header .redes img{
+header .redes a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 37px;
+    height: 37px;
+    background-color: #9a9a9a;
+    color: #FFFFFF;
+    border-radius: 50%;
+    margin-left: .3em;
+    margin-top: 1em;
+}
+
+header .redes a i:before{
+    color: #FFFFFF;
+    font-size: 1.4em;
+}
+
+header .redes a#iconoFacebook:hover{
+    background-color: #0064BF;
+    text-decoration: none;
+    transition: all .2s ease;
+    
+}
+
+header .redes a#iconoInstagram:hover{
+    background: linear-gradient(217deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%),
+            linear-gradient(127deg, rgba(255,0,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(255,0,0,.8), rgba(0,0,255,0) 70.71%);
+
+    ;
+    text-decoration: none;
+    transition: all .2s ease
+}
+
+
+/*header .redes img{
     width: 37px;
     height: 37px;
     margin-left: .3em;
     margin-top: 1em;
-}
+}*/
 
 .fa-bars:before {
     font-size: 1.7em;
@@ -491,6 +527,55 @@ header .navbar>div ul li{
     margin-left: .3em;
 }
 
+div.screenSlide{
+    margin-top: 3em!important;
+}
+
+div.screenSlide span.poppins{
+    font-size: 20px;
+    line-height: 2.2em
+}
+
+div.screenSlide>h2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.screenSlide>h2 p{
+    font-size: 20em;
+    line-height: 1.5em;
+}
+
+div.screenSlide>h2 p.poppins{
+    margin-bottom: 1em;
+    width: 100%;
+    text-align: center
+}
+
+div.screenSlide>h2 span.poppins{
+    margin-bottom: 0;
+}
+
+#inicio .sliderInfo div.screenSlide>h2 {
+    width: min-content;
+}
+
+.sliderInfo div.screenSlide h2 span.children{
+    line-height: 1em;
+}
+
+#inicio .sliderInfo div.screenSlide .btn-blue{
+    margin: inherit;
+    width: 70%;
+}
+
+
+
+#inicio .sliderInfo div.screenSlide #humectacion{
+     background-image: none;
+}
 
 
 /* -lanzamiento- */
@@ -2267,6 +2352,25 @@ form.form-inline.my-2.my-lg-0{
     }
     
     
+    
+    #inicio div.screenSlide>h2 p.poppins{
+        width: 100%!important;
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    
+    .sliderInfo div.screenSlide h2 span.children{
+        font-size: 3em;
+        line-height: .9em
+    }
+    
+    #inicio .sliderInfo div.screenSlide .btn-blue{
+        margin-top: 6em;
+        width: 70%;
+        margin-left: 3em!important;
+    }
+    
+    
 }
 
 @media(min-width: 768px){
@@ -2582,6 +2686,47 @@ form.form-inline.my-2.my-lg-0{
         padding-top: 3em;
     }
     
+    
+    
+    
+    
+    div.screenSlide {
+        margin-top: 0!important;
+        height: 100%;
+    }
+    
+    #inicio div.screenSlide>h2 p.poppins{
+        width: 100%!important;
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 2em;
+    }
+    
+    .sliderInfo div h2 span.poppins{
+        font-size: 54px;
+        margin-bottom: 0;
+            line-height: 1em;
+    }
+    
+    .sliderInfo div.screenSlide h2 span.children{
+        font-size: 3.5em;
+        line-height: 1em
+    }
+    
+    #inicio .sliderInfo div.screenSlide .btn-blue{
+        margin-top: 4em;
+        width: 70%;
+        margin-left: 3em!important;
+    }
+    
+    
+    
+    
+   /* #inicio .sliderInfo{
+        height: inherit
+    }*/
+    
+    
 }
 
 
@@ -2652,7 +2797,7 @@ form.form-inline.my-2.my-lg-0{
         width: 140px;
     }
     
-    header .redes img{
+    header .redes a{
         margin-top: 0;
     }
     
@@ -2847,7 +2992,12 @@ form.form-inline.my-2.my-lg-0{
         font-size: .8em;
     }
     
+    div.screenSlide{
+        margin-top: 0;
+    }
     
+    
+    /* -Portal- */
     .infoCard{
         margin-top: 0;
     }
@@ -3361,6 +3511,37 @@ form.form-inline.my-2.my-lg-0{
     }
     
     
+    
+    
+    
+    div.screenSlide {
+        margin-top: 0!important;
+        height: 100%;
+    }
+    
+    #inicio div.screenSlide>h2 p.poppins{
+        width: 100%!important;
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    
+    .sliderInfo div h2 span.poppins{
+        font-size: 50px;
+        margin-bottom: 0
+    }
+    
+    .sliderInfo div.screenSlide h2 span.children{
+        font-size: 2em;
+        line-height: inherit
+    }
+    
+    #inicio .sliderInfo div.screenSlide .btn-blue{
+        margin-top: 6em;
+        width: 70%;
+        margin-left: 3em!important;
+    }
+    
+    
 }
 
 
@@ -3471,6 +3652,61 @@ form.form-inline.my-2.my-lg-0{
     
     #btn-up{
         bottom: 3em;
+    }
+    
+    
+    
+    
+    
+    
+
+    
+    #inicio .sliderInfo div.screenSlide {
+        margin-top: 0!important;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #inicio .sliderInfo div.screenSlide>h2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    #inicio div.screenSlide>h2 span.poppins{
+        width: 100%;
+        display: block;
+        text-align: center
+    }
+    
+    #inicio div.screenSlide>h2 p.poppins{
+        width: 100%!important;
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    
+    .sliderInfo div h2 span.poppins{
+        font-size: 50px;
+        margin-bottom: 0
+    }
+    
+    .sliderInfo div.screenSlide h2 span.children{
+        font-size: 2em;
+        line-height: .9em;
+        width: 100%;
+        text-align: center;
+    }
+    
+    #inicio .sliderInfo div.screenSlide .btn-blue{
+        margin-top: 4em;
+        width: fit-content;
+        margin-left: 0!important;
+        
     }
     
 }
@@ -3736,6 +3972,34 @@ form.form-inline.my-2.my-lg-0{
     
     #inicio .sliderInfo .btn-blue{
         margin-left: 0;
+    }
+    
+    
+    .sliderInfo div h2 span.poppins{
+        font-size: 60px;
+        margin-bottom: 0
+    }
+    
+    .sliderInfo div.screenSlide h2 span.children{
+        font-size: 2.1em;
+        line-height: .9em;
+        width: auto;
+        text-align: center;
+        padding: 0 24px;
+    }
+    
+    #inicio div.screenSlide>h2 p.poppins{
+        margin-bottom: 1em;
+    }
+    
+    #inicio div.screenSlide>h2 p.poppins{
+        margin-bottom: 2em;
+        font-size: 20px;
+    }
+    
+    .sliderInfo div h2 span.poppins{
+        font-size: 68px;
+        margin-bottom: 0
     }
     
     
