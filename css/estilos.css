@@ -110,7 +110,7 @@
 }
 
 .btn-red:hover{
-    background-color: #fc0021;
+    background-color: #bc0019;
     text-decoration: none;
 }
 
@@ -187,6 +187,13 @@
 .backTitleDG{
     background-image: url(../img/mancha-verde-doblelinea.png);
     background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.backTitleDB{
+    background-image: url(../img/mancha-azul-doblelinea.png);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -476,7 +483,7 @@ header .navbar>div ul li{
     font-size: .7em;
 }
 
-#inicio h2{
+#inicio h2#absorcionInmediata{
     background-image: url(../img/mancha-titulo-rojo.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -510,10 +517,50 @@ header .navbar>div ul li{
 
 #inicio .sliderInfo p{
     font-size: 12px;
-    margin-top: 2em;
+    margin-top: 0em;
     margin-bottom: 0em;
     width: 70%;
 }
+
+#inicio .sliderInfo p.parrafo{
+    margin-top: 1em;
+    width: 100%;
+}
+
+
+
+
+
+
+#inicio .slideItem .sliderInfo h2{
+    margin-left: 0;
+}
+
+#inicio .slideItem .sliderInfo .screenSlide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+}
+
+#inicio .slideItem .sliderInfo .screenSlide button{
+    width: inherit!important;
+    line-height: 1.5em;
+}
+
+#inicio .slideItem .sliderInfo>div{
+    margin: 0
+}
+
+#inicio .slideItem .sliderInfo{
+    width: 60%;
+}
+
+
+
+
+
+
 
 #inicio .sliderInfo span.bold{
     font-size: 12px;
@@ -571,10 +618,14 @@ div.screenSlide>h2 span.poppins{
     width: 70%;
 }
 
+#inicio .sliderInfo div.screenSlide .btn-slide{
+    margin-top: 1em
+}
+
 
 
 #inicio .sliderInfo div.screenSlide #humectacion{
-     background-image: none;
+    background-image: none;
 }
 
 
@@ -713,6 +764,10 @@ div.screenSlide>h2 span.poppins{
     width: 100%;
 }
 
+.alturaChica .fondo{
+    height: 100%;
+    position: static;
+}
 
 .cardContent .cardText{
     position: absolute;
@@ -729,6 +784,14 @@ div.screenSlide>h2 span.poppins{
     background-repeat: no-repeat;
     background-size: cover;
     padding: 1em .5em 1em .5em;
+}
+
+.alturaChica .cardText{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em 1em;
 }
 
 .cardContent .cardText h2{
@@ -840,7 +903,8 @@ div.screenSlide>h2 span.poppins{
 
 .institucionalCard .cardText h2{
     font-size: 20px;
-    line-height: 1.5em
+    line-height: 1.5em;
+    display: block;
 }
 
 .institucionalCard .titleSection{
@@ -1676,10 +1740,10 @@ div.screenSlide>h2 span.poppins{
 
 div#newsletter{
     text-align: center;
+    padding-bottom: 4em;
 }
 
 footer{
-    padding-top: 5em;
     padding-bottom: 2em
 }
 
@@ -1715,7 +1779,7 @@ footer .submit input[type="text"]::placeholder{
 footer .legales{
     display: flex;
     flex-direction: column;
-    margin-top: 5em;
+    margin-top: 8em;
 }
 
 
@@ -1732,8 +1796,8 @@ footer .legales>img{
     margin: auto;
     margin-top: 5em;
     margin-bottom: 4em;
-    width: 176px;
-    height: 127px;
+    width: 149px;
+    height: 89px;
 }
 
 footer .legales p{
@@ -1745,7 +1809,7 @@ footer .legales .redes{
     margin: auto;
     width: 150px;
     text-align: center;
-    margin-bottom: 8em;
+    margin: 2em auto;
 }
 
 footer .navFooter ul{
@@ -2227,12 +2291,116 @@ form.form-inline.my-2.my-lg-0{
 
 
 
+/* -Elegí producto- */
+#elegiProducto{
+    text-align: center;
+    padding: 5em 0;
+    background-color: #FFFFFF
+}
+
+
+#elegiProducto .parentBox{
+}
+
+#elegiProducto .parentBox .box{
+    width: 100%;
+    margin: 1em auto;
+}
+
+#elegiProducto .parentBox .box figure{
+    background-image: url(../img/back-producto.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#elegiProducto .parentBox .box img {
+    width: 100%;
+    max-height: 100%;
+}
+
+#elegiProducto h3{
+    background-image: url(../img/mancha-verde.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 4em;
+    line-height: 1em
+}
+
+
+#elegiProducto .parentBox .box h4{
+    margin-bottom: 1.5em;
+}
 
 
 
 
+.owl-carousel .owl-nav button.owl-prev{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,.5);
+    box-shadow: 0px 0px 5px rgba(0,0,0,.2)
+}
+
+.owl-carousel .owl-nav button.owl-next{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    background-color: rgba(255,255,255,.5);
+    box-shadow: 0px 0px 5px rgba(0,0,0,.2)
+    
+}
 
 
+.palabraDestacada{
+    font-size: 2em;
+    line-height: 0;
+}
+
+.block{
+    display: block;
+}
+
+#iconoCarro{
+    max-width: 129px;    
+}
+
+#mapaSucursales{
+    width: 100%;
+}
+
+#circleOrder .map>div.mapcontent{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#mapa{
+    height: 400px;
+}
+
+.bgNewsletter{
+    background-color: #69ADB6
+}
 
 
 @media(min-width: 575px){
@@ -2325,6 +2493,7 @@ form.form-inline.my-2.my-lg-0{
     footer .navFooter ul{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
  
     footer .navFooter ul li{
@@ -2374,6 +2543,21 @@ form.form-inline.my-2.my-lg-0{
 }
 
 @media(min-width: 768px){
+    
+    #mapcontent{
+        height: 125%;
+    }
+    
+    #mapa{
+        height: auto
+    }
+    
+    #mapa img{
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
     
     .navbar-light .navbar-nav .nav-link{
         margin-right: 1em;
@@ -2447,7 +2631,7 @@ form.form-inline.my-2.my-lg-0{
     }
     
     footer{
-        padding-top: 2em;
+        padding-top: 0;
     }
         
     footer .legales{
@@ -2469,11 +2653,11 @@ form.form-inline.my-2.my-lg-0{
     }
     
     footer .legales>img{
-        margin: 0
+        margin: 3em auto
     }
     
     footer .legales .redes{
-        margin: 0;
+        margin: 3em auto;
         width: 100%;
     }
     
@@ -2484,15 +2668,13 @@ form.form-inline.my-2.my-lg-0{
     }
     
     div#newsletter{
-        margin-top: 5em;
-        margin-bottom: 9em;
         max-width: 1015px;
         margin-left: auto;
         margin-right: auto;
     }
     
     div#newsletter>div{
-        margin: 2.5em;
+        margin: 0 2.5em;
     }
     
     footer .textoLegal p{
@@ -2727,6 +2909,18 @@ form.form-inline.my-2.my-lg-0{
     }*/
     
     
+    #inicio .sliderInfo p.parrafo{
+        margin-top: 1em!important;
+        margin-bottom: 0!important;
+    }
+    
+    
+    
+    
+    #elegiProducto .parentBox .box img {
+        width: 100%;
+    }
+    
 }
 
 
@@ -2836,6 +3030,9 @@ form.form-inline.my-2.my-lg-0{
 
 @media(min-width: 1000px){
     
+    .backTitleDB{
+        background-size: contain;
+    }
 
     
     
@@ -3000,6 +3197,7 @@ form.form-inline.my-2.my-lg-0{
     /* -Portal- */
     .infoCard{
         margin-top: 0;
+        padding: .5em
     }
     
     #lanzamiento .bright-inicial, #lanzamiento .bright-final {
@@ -3043,7 +3241,7 @@ form.form-inline.my-2.my-lg-0{
     }
     
     .cardContent .cardText h2 span{
-        display: block;
+/*        display: block;*/
     }
     
     .cardContent .cardText h3{
@@ -3074,7 +3272,7 @@ form.form-inline.my-2.my-lg-0{
     }
     
     .institucionalCard .cardText h2{
-        font-size: 21px;
+        font-size: 24px;
     }
     
     .largeTxtBlock {
@@ -3371,11 +3569,12 @@ form.form-inline.my-2.my-lg-0{
     
     .firma{
         margin-top: 1em;
+        text-align: center;
     }
     
     footer .legales>img{
         margin: 0;
-        margin-top: .7em;
+        margin-top: 0;
     }
     
     footer .legales .textoLegal{
@@ -3541,6 +3740,30 @@ form.form-inline.my-2.my-lg-0{
         margin-left: 3em!important;
     }
     
+    #inicio .slideItem .sliderInfo .screenSlide button{
+        margin-top: 1em;
+        margin-left: 0!important
+    }
+    
+    
+    .alturaChica .cardText{
+        width: 100%;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    
+    
+    
+    
+    #circleOrder .map>div.mapcontent{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+    #mapa{
+        max-height: 700px;
+    }
     
 }
 
@@ -3687,16 +3910,20 @@ form.form-inline.my-2.my-lg-0{
     #inicio div.screenSlide>h2 p.poppins{
         width: 100%!important;
         font-size: 20px;
-        margin-bottom: 0;
+        margin-bottom: 1em;
+    }
+    
+    #inicio .sliderItem div.screenSlide>h2 p.poppins{
+        margin-bottom: 0
     }
     
     .sliderInfo div h2 span.poppins{
-        font-size: 50px;
+        font-size: 40px;
         margin-bottom: 0
     }
     
     .sliderInfo div.screenSlide h2 span.children{
-        font-size: 2em;
+        font-size: 1.7em;
         line-height: .9em;
         width: 100%;
         text-align: center;
@@ -3707,6 +3934,44 @@ form.form-inline.my-2.my-lg-0{
         width: fit-content;
         margin-left: 0!important;
         
+    }
+    
+    
+    
+    
+    #inicio .slideItem .sliderInfo{
+        
+    }
+    
+    #inicio .slideItem .sliderInfo .screenSlide{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #inicio .slideItem .sliderInfo .screenSlide button{
+        width: max-content!important;
+        margin-left: inherit!important;
+        margin-top: 2em;
+    }
+    
+    .slideItem .sliderInfo div h2 span:first-child{
+        left: 0;
+    }
+    
+    .slideItem .sliderInfo div h2 span.children{
+        width: auto;
+        padding: .1em;
+    }
+    
+    
+    
+    
+    #elegiProducto .parentBox .box img {
+        width: 65%;
+        margin: auto
     }
     
 }
@@ -3751,6 +4016,10 @@ form.form-inline.my-2.my-lg-0{
 
 
 @media(min-width: 1500px){
+    
+    #mapa{
+        max-height: 700px;
+    }
     
     #productosListado nav ul li:last-child{
         display: block
@@ -3829,13 +4098,13 @@ form.form-inline.my-2.my-lg-0{
     
     div#newsletter{
         margin: auto;
-        margin-top: 3em;
+        margin-top: 0;
         margin-bottom: 10em;
         
     }
     
     footer{
-        padding-top: 2em;
+        padding-top: 0;
     }
     
     footer .legales{
@@ -3981,7 +4250,7 @@ form.form-inline.my-2.my-lg-0{
     }
     
     .sliderInfo div.screenSlide h2 span.children{
-        font-size: 2.1em;
+        font-size: 1.9em;
         line-height: .9em;
         width: auto;
         text-align: center;
@@ -4027,7 +4296,7 @@ form.form-inline.my-2.my-lg-0{
     }
     
     .institucionalCard .cardText h2{
-        font-size: 34px;
+        font-size: 26px;
     }
     
     .cardContent .cardText{
@@ -4228,6 +4497,23 @@ form.form-inline.my-2.my-lg-0{
     #compraonlinePage .circle-box>div img{
         width: 20%;
         margin-bottom: 0;
+    }
+    
+    
+    
+    #inicio .slideItem  div.screenSlide>h2 p.poppins{
+        font-size: 30px
+    }
+    
+    #inicio .sliderInfo div.screenSlide #humectacion{
+        margin-top: -1em;
+    }
+    
+    
+    .alturaChica .cardText{
+        width: 100%;
+        padding-left: 1em;
+        padding-right: 1em;
     }
     
 }

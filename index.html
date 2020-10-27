@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>Perpiel</title>
     <script src="https://kit.fontawesome.com/861dcd5a75.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
     <script
@@ -65,7 +66,6 @@
         <div id="inicio" class="carousel-inner">
 
             <div class="carousel-item active">
-<!--              <img src="img/slider1.jpg" class="d-block w-100"  alt="">-->
               <picture class="d-block w-100">
                   <source media="(max-width: 600px)" srcset="img/slider2a.jpg">
                   <source media="(max-width: 999px)" srcset="img/slider2b.jpg">
@@ -83,35 +83,35 @@
                         
                         </h2>  
                         
-                        <button class="btn-blue" href="producto.html">Ver más</button>                      
+                        <button class="btn-blue" href="producto.html"><a href="producto.html" class="fontWhite bold">Ver más</a></button>                      
                    </div>
                     
               </div>
             </div> 
-            <!--<div class="carousel-item">
-              <picture class="d-block w-100">
-                  <source media="(max-width: 600px)" srcset="img/slider1a.jpg">
-                  <source media="(max-width: 999px)" srcset="img/slider1b.jpg">
-                  <img src="img/slider1.jpg" alt="">
-              </picture>
-              <div class="sliderInfo">
-                   <div>
-                       <h2>
-                        <span class="children">Nueva</span><br>
-                        <span class="children">línea</span>
-                        <span class="poppins">PerPiel</span>
-                        </h2>
-                        <div>
-                            <p>Lo que tardás en <span class="bold">compartir tu felicidad</span>, <br>es lo que tarda la nueva línea PerPiel<br>en <span class="bold">vitalizarte</span>.</p>
-                            <button class="btn-blue" href="producto.html">Ver más</button>
-                        </div>
-                        
-                   </div>
-                    
-              </div>
-            </div>-->
             
-            <!--<div class="carousel-item">
+            <div class="carousel-item slideItem">
+              <picture class="d-block w-100">
+                  <source media="(max-width: 600px)" srcset="img/slider3a.jpg">
+                  <source media="(max-width: 999px)" srcset="img/slider3b.jpg">
+                  <img src="img/slider3.jpg" alt="">
+              </picture>
+              <div class="sliderInfo">
+                  
+                   <div class="screenSlide">
+                      
+                       <h2>
+                        <span class="children">Comprá</span>
+                        <span class="children">online</span>
+                        <p class="poppins parrafo bold">en tu farmacia más cercana</p>
+                       </h2>  
+                        
+                        <button class="btn-blue"><a href="compraonline.html" class="fontWhite bold">Ver sucursales</a></button>                      
+                   </div>
+                    
+              </div>
+            </div> 
+            
+            <div class="carousel-item">
               <picture class="d-block w-100">
                   <source media="(max-width: 600px)" srcset="img/slider1a.jpg">
                   <source media="(max-width: 999px)" srcset="img/slider1b.jpg">
@@ -119,20 +119,20 @@
               </picture>
               <div class="sliderInfo">
                    <div>
-                       <h2>
+                       <h2 id="absorcionInmediata">
                         <span class="children">Nueva</span><br>
                         <span class="children">línea</span>
                         <span class="poppins">PerPiel</span>
                         </h2>
                         <div>
                             <p>Lo que tardás en <span class="bold">compartir tu felicidad</span>, <br>es lo que tarda la nueva línea PerPiel<br>en <span class="bold">vitalizarte</span>.</p>
-                            <button class="btn-blue" href="producto.html">Ver más</button>
+                            <button class="btn-blue" href="producto.html"><a href="producto.html" class="bold fontWhite">Ver más</a></button>
                         </div>
                         
                    </div>
                     
               </div>
-            </div>    -->      
+            </div>          
             
 
          </div>
@@ -150,7 +150,7 @@
     
     <main>
         
-        <section id="seccion-lanzamiento" class="bgWhite">
+<!--        <section id="seccion-lanzamiento" class="bgWhite">
            <div class="marginLanzamiento">
                 <figure>
                     <img src="img/abs-inm1.png" alt="Perpiel absorcion inmediata">
@@ -174,7 +174,66 @@
                 </div>
            </div>
             
+        </section>-->
+        
+        
+        <!--<section id="elegiProducto">
+            <div class="owl-carousel owl-theme">
+                <div class="item"><h4>1</h4></div>
+                <div class="item"><h4>2</h4></div>
+                <div class="item"><h4>3</h4></div>
+                <div class="item"><h4>4</h4></div>
+                <div class="item"><h4>5</h4></div>
+            </div>
+        </section>-->
+        
+        
+        
+        <section id="elegiProducto">
+           <div class="widthMargin">
+               <h2 class="subrayado f20">Elegí tu producto</h2>
+               <h3 class="children f4em">¿Y vos cuál querés?</h3>
+                <div class="parentBox owl-carousel">
+                    <div class="box">
+                        <figure>
+                            <img src="img/abs-inm1.png" alt="Perpiel absorcion inmediata">
+                        </figure>
+                        <h4>Absorción inmediata</h4>
+                        <a href="producto.html" class="btn-blue">Ver más</a>
+                    </div>
+                    <div class="box">
+                        <figure>
+                            <img src="img/abs-inm2.png" alt="Perpiel absorcion inmediata">
+                        </figure>
+                        <h4>Absorción inmediata</h4>
+                        <a href="producto.html" class="btn-blue">Ver más</a>
+                    </div>
+                    <div class="box">
+                        <figure>
+                            <img src="img/abs-inm1.png" alt="Perpiel absorcion inmediata">
+                        </figure>
+                        <h4>Absorción inmediata</h4>
+                        <a href="producto.html" class="btn-blue">Ver más</a>
+                    </div>
+                    <div class="box">
+                        <figure>
+                            <img src="img/abs-inm2.png" alt="Perpiel absorcion inmediata">
+                        </figure>
+                        <h4>Absorción inmediata</h4>
+                        <a href="producto.html" class="btn-blue">Ver más</a>
+                    </div>
+                    <div class="box">
+                        <figure>
+                            <img src="img/abs-inm1.png" alt="Perpiel absorcion inmediata">
+                        </figure>
+                        <h4>Absorción inmediata</h4>
+                        <a href="producto.html" class="btn-blue">Ver más</a>
+                    </div>
+                </div>
+           </div>
         </section>
+        
+        
         
         
         <section id="portal">
@@ -183,19 +242,19 @@
                  
                   <div class="card">
                     <li class="cardContent alturaStandard" id="lanzamiento">
-                    <a href="producto-detalle.html">
+                    <a href="producto.html">
                         <figure>
-                            <img src="img/abs-inm-verde.jpg" alt="absorcion inmediata">
+                            <img src="img/hum-prof.jpg" alt="humectacion profunda">
                         </figure>
                         <div class="fondo"></div>
                         <div class="cardText">
                           <div>
-                               <h3 class="titleSection">Lanzamiento</h3>
+                               <h3 class="titleSection">Novedades</h3>
                                <span class="subrSectionVerde"></span>
                           </div>
                            <div class="infoCard">
                                <p class="logoPerpiel">PerPiel</p>
-                                <h2 class="children backTitleDG"><span class="bright-inicial"></span>Absorción inmediata<span class="bright-final"></span></h2>
+                                <h2 class="children backTitleDB"><span class="bright-inicial"></span>Humectación profunda<span class="bright-final"></span></h2>
                            </div>
                             <button class="btn-green">Ver Más</button>
                         </div>
@@ -204,7 +263,7 @@
                   </div>
 
 
-                  <div class="card">
+                  <!--<div class="card">
                     <li class="cardContent alturaChica" id="comuniCard">
                        <a href="producto-detalle.html">
                         <div class="cardText">
@@ -217,7 +276,7 @@
                                 
                                 <h2 class="children nov">
                                     <span class="brightRojo-inicial"></span>
-                                    Un vínculo especial
+                                    ¿Por qué debo hidratar mi piel todos los días?
                                     <span class="brightRojo-final"></span>
                                 </h2>
                                 
@@ -226,6 +285,26 @@
                             <p class="fontRed">que une y transmite amor.</p>
                             
                         </div>
+                        </a>
+                    </li>
+                  </div>-->
+                  
+                  <div class="card">
+                    <li class="cardContent alturaChica institucionalCard">
+                       <a href="producto-detalle.html">
+                            <div class="fondo"></div>
+                            <div class="cardText">
+                              <div>
+                                  <div>
+                                      <h3 class="titleSection">Comunidad</h3>
+                                      <hr>
+                                  </div>
+                              </div>
+                               <div class="infoCard">
+                                    <h2>¿Por qué debo hidratar mi piel todos los días?</h2>
+                               </div>
+                                <button class="btn-lineal-blue">Ver Más</button>
+                            </div>
                         </a>
                     </li>
                   </div>
@@ -241,11 +320,12 @@
                           <div>
                               <div>
                                   <h3 class="titleSection">Productos</h3>
-                                  <hr>
+                                  <span class="subrSectionRojo"></span>
                               </div>
                           </div>
                            <div class="infoCard">
-                                <h2>Descubre nuestros nuevos productos</h2>
+                                <h2 class="block"><span class="children palabraDestacada">Descubrí</span>
+                                toda la línea PerPiel </h2>
                            </div>
                             <button class="btn-lineal-blue">Ver Más</button>
                         </div>
@@ -259,7 +339,7 @@
                     <li class="cardContent alturaStandard" id="seguinos">
                        <a href="producto-detalle.html">
                         <figure>
-                            <img src="img/card-instagram.jpg" alt="absorcion inmediata">
+                            <img src="img/seguinos1.jpg" alt="absorcion inmediata">
                         </figure>
                         <div class="fondo"></div>
                         
@@ -286,7 +366,7 @@
 
                   <div class="card">
                     <li class="cardContent alturaStandard" id="momentoPerpiel">
-                       <a href="producto-detalle.html">
+                       <a href="https://www.instagram.com/per.piel/" target="_blank">
                        
                        <figure>
                             <img src="img/naty-franzoni.jpg" alt="momento perpiel">
@@ -298,21 +378,15 @@
                            <div class="largeTxtBlock infoCard">
                                 <div>
                                    <img class="logo-momento" src="img/momento_perpiel.png" alt="momento perpiel">
-                                    <!--<h2 class="backTitleRed fullWidth">
-                                       <span class="brightRojo-inicial"></span>
-                                        <div class="children"><span class="brightRojo-inicial"></span>Momento<span class="brightRojo-final"></span></div>
-                                        <div class="poppins block">PerPiel</div>
-                                        <span class="brightRojo-final"></span>
-                                        
-                                    </h2> -->
+                                    
                                 </div>
                            </div>
                            <div class="infoMomPerpiel">
-                               <h4 class="bold">con Naty Franzoni</h4>
-                               <p>Viernes 16 de Julio, 16 hs.</p>
+                               <p>Seguínos en Instagram para disfrutar de un espacio de relajación junto con</p>
+                               <h4 class="bold">@NatyFranz</h4>
                            </div>
                            
-                            <button class="btn-red">Ver Más</button>
+                            <button class="btn-red">Seguinos!</button>
                             
                         </div>
                         
@@ -323,27 +397,21 @@
                   
                   
                   <div class="card">
-                    <li class="cardContent alturaChica" id="comuniCard">
+                    <li class="cardContent alturaChica institucionalCard">
                        <a href="producto-detalle.html">
-                        <div class="cardText">
-                           
-                            <div>
-                               <h3 class="titleSection">Comunidad</h3>
-                               <span class="subrSectionRojo"></span>
+                            <div class="fondo"></div>
+                            <div class="cardText">
+                              <div>
+                                  <div>
+                                      <h3 class="titleSection">Comunidad</h3>
+                                      <hr>
+                                  </div>
+                              </div>
+                               <div class="infoCard">
+                                    <h2>¿Qué PerPiel pueden utilizar las embarazadas?</h2>
+                               </div>
+                                <button class="btn-lineal-blue">Ver Más</button>
                             </div>
-                            <div class="tituloCard">
-                                
-                                <h2 class="children nov">
-                                    <span class="brightRojo-inicial"></span>
-                                    Un vínculo especial
-                                    <span class="brightRojo-final"></span>
-                                </h2>
-                                
-                            </div>
-                            
-                            <p class="fontRed">que une y transmite amor.</p>
-                            
-                        </div>
                         </a>
                     </li>
                   </div>
@@ -360,14 +428,14 @@
         <section id="circleOrder" class="bgBlueLight">
             <div class="contentOnline boxCircle">
                 <div class="fontWhite widthMargin">
-                    <img src="img/icons/carrito.png" alt="compra online">
+                    <img src="img/icons/carrito.png" alt="compra online" id="iconoCarro">
                     <h2 class="fontWhite children">Comprá online</h2>
                     <p class="fontWhite">en tu farmacia más cercana.</p>
                     <a href="compraonline.html" class="btn-lineal-white"><img src="img/icons/addres_red.png" alt=""><span class="fontWhite buscaSucursales">Buscar sucursales</span></a>
                 </div>
-                <div class="map">
-                   <div>
-                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52530.36619270579!2d-58.43176258265067!3d-34.625702903486115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1602290304843!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <div class="map" id="mapa">
+                   <div id="mapcontent">
+                       <img id="mapaSucursales" src="img/mapa.jpg" alt="sucursales">
                    </div>
                     
                 </div>
@@ -383,19 +451,22 @@
     </main>
 
         <footer class="bgBlue">
-        <div class="widthMargin" id="newsletter">
-           <div>
-                <h4 class="fontWhite">Suscribite a nuestro Newsletter</h4>
-                <p class="fontWhite">Recibí ofertas exclusivas, nuevos lanzamientos y descubrí recomendaciones de nuestra comunidad.</p>   
-           </div>
-           <div class="submit">
-               <input type="text" placeholder="Dirección E-mail">
-               <input type="submit" value="Me suscribo" class="btn-red">
-           </div>
-            
+        <div class="bgNewsletter">
+               <div class="widthMargin" id="newsletter">
+               <div>
+                    <h4 class="fontWhite">Suscribite a nuestro Newsletter</h4>
+                    <p class="fontWhite">Recibí ofertas exclusivas, nuevos lanzamientos y descubrí recomendaciones de nuestra comunidad.</p>   
+               </div>
+               <div class="submit">
+                   <input type="text" placeholder="Dirección E-mail">
+                   <input type="submit" value="Me suscribo" class="btn-red">
+               </div>
+
+            </div>    
         </div>
+        
         <div class="legales flex">
-            <img src="img/laboratorios_bernabo.png" alt="laboratorios bernabo">
+            
             <div class="widthMargin textoLegal">
                 <p class="fontWhite">Laboratorios Bernabó asume que Internet es un medio de comunicación global; sin embargo, la industria farmacéutica está sujeta al marco regulatorio específico de cada país. Toda la información referente a nuestros Productos contenida en este sitio web, esta exclusivamente destinada a satisfacer la necesidad de los profesionales de la salud, de obtener mayor información para el uso adecuado de los medicamentos. Dicha información, jamás podrá sustituir el asesoramiento, diagnóstico, indicación o consejo profesional de un médico calificado. Laboratorios Bernabó le recuerda la importancia de consultar con su Médico y/o Farmacéutico ante cualquier duda.
                 </p>
@@ -408,6 +479,7 @@
                </div>
                 
             </div>
+            <img src="img/laboratorios_bernabo.png" alt="laboratorios bernabo">
             
         </div>
         
@@ -434,7 +506,30 @@
             
                 
                     
-                            
+    <script src="js/owl.carousel.js"></script>  
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            autoplay:true,
+            autoplayTimeout:2000,
+            responsive : {
+            // breakpoint from 0 up
+            0 : {
+                items:1
+            },
+            // breakpoint from 480 up
+            768 : {
+                items:3
+            },
+            // breakpoint from 768 up
+            1000 : {
+                items:3
+            }
+        }
+        })
+    </script>                  
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
