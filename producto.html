@@ -62,9 +62,13 @@
         
     </header>
     
-    <main id="inicio">
+    <main id="inicio" class="detalleProducto">
             
-        <article id="producto" class="">
+        <article id="producto" class="parentSection">
+           
+           <nav class="volverPagina">
+               <a href="javascript:window.history.back();"><i class="fas fa-arrow-left left-blanco"></i><span>Volver</span></a>
+           </nav>
             
             <div class="productInfo">
 <!--              <span class="fontRed backLink">Volver</span>-->
@@ -79,11 +83,17 @@
                </div>
                <div class="botonera">
                    <a href="compraonline.html" class="btn-blue flex compraonline">
-                       <img src="img/icons/carrito.png" alt="comprar online" height="52">
+                      <figure>
+                          <img src="img/icons/carrito.png" alt="comprar online">
+                      </figure>
+                       
                        <span class="fontWhite mayuscula bold productAction">Comprar online</span>
                    </a>
                    <a href="#" class="btn-lineal-blue flex">
-                       <img src="img/icons/prospecto.png" alt="prospecto" height="52">
+                      <figure>
+                           <img src="img/icons/prospecto.png" alt="prospecto" height="52">   
+                      </figure>
+                      
                        <span class="fontBlue mayuscula bold productAction">Descargar Prospecto</span>
                    </a>
                </div>
@@ -168,7 +178,7 @@
             </div>
         </section>
         
-        <section id="productosListado">
+        <aside id="productosListado">
             <div class="widthMargin">
                 <h3 class="poppins subrayado">Productos similares</h3>
             
@@ -230,7 +240,7 @@
                     </ul>
                 </nav>
             </div>
-        </section>
+        </aside>
         
         <section id="circleOrder" class="bgBlueLight">
             <div class="contentOnline boxCircle">

@@ -1151,12 +1151,13 @@ div.screenSlide>h2 span.poppins{
 #producto .productInfo .descripcion p{
     max-width: 555px;
     font-size: 16px;
-    
+    margin: auto;
 }
 
 .productAction{
     display: flex;
     align-items: center;
+    font-size: 15px;
 }
 
 .descrItem p{
@@ -1180,17 +1181,29 @@ div.screenSlide>h2 span.poppins{
     margin-top: 3em;
 }
 
-#producto .productInfo .botonera a{
+#producto .productInfo .botonera a {
     width: 100%;
-    padding: .6em 2.5em;
+    padding: .3em 2em;
+    height: 50px;
     text-align: left;
     font-size: .875em;
     margin-bottom: 1em;
 }
 
+#producto .productInfo .botonera a figure{
+    width: 14%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #producto .productInfo .botonera a img{
     margin-right: .5em;
     margin-left: -.5em;
+    width: auto;
+    max-height: 100%;
 }
 
 #producto .productInfo .botonera a:hover{
@@ -1728,6 +1741,7 @@ div.screenSlide>h2 span.poppins{
     margin-bottom: 5em;
     align-items: center;
     justify-content: center;
+    padding: 0 2.5em;
 }
 
 
@@ -2196,6 +2210,12 @@ form.form-inline.my-2.my-lg-0{
 #contacPage .contentOnline div h1{
     font-size: 24px;
     margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+#contacPage .contentOnline div h1 span{
+    font-size: 24px;
 }
 
 #contacPage .contentOnline div>p{
@@ -2220,7 +2240,7 @@ form.form-inline.my-2.my-lg-0{
 #contacPage .map .datosUtiles ul{
     width: 70%;
     margin: auto;
-    margin-bottom: 2em;
+    margin-bottom: 5em;
 }
 
 #contacPage .map .datosUtiles h3{
@@ -2285,12 +2305,14 @@ form.form-inline.my-2.my-lg-0{
     height: 37px;
     border-radius: 37px;
     border: 1px solid #0064BF;
+    padding: .5em;
 }
 
 #contacPage .contentOnline form li textarea{
     border-radius: 25px;
     height: 95px;
     border: 1px solid #0064BF;
+    padding: .5em;
 }
 
 #contacPage .contentOnline form li label>span{
@@ -2429,8 +2451,50 @@ form.form-inline.my-2.my-lg-0{
     text-align: center;
 }
 
+.parentSection{
+    position: relative;
+}
+
+.parentSection .volverPagina{
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    z-index: 999; 
+}
+
+.parentSection .volverPagina .fa-arrow-left{
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+#comunidadPage .parentSection .volverPagina .fa-arrow-left,
+#contacPage .parentSection .volverPagina .fa-arrow-left{
+    color: #002575
+}
+
+.parentSection .volverPagina a span{
+    display: none;
+}
+
+#listadoProductos .circle-box{
+    min-height: inherit;
+}
+
+#compraonlinePage .parentSection .volverPagina{
+    top: -68%;
+}
+
+.detalleProducto .descripcion {
+    margin-top: 2em;
+    margin-bottom: 2em
+}
+
 
 @media(min-width: 575px){
+    
+    #compraonlinePage .parentSection .volverPagina{
+        top: -120%;
+    }
     
     #perpielInfo #bernabo .infoLab h2,
     #perpielInfo #bernabo .infoLab p{
@@ -2569,6 +2633,19 @@ form.form-inline.my-2.my-lg-0{
 }
 
 @media(min-width: 768px){
+    
+    #producto .productInfo h2{
+        font-size: 5.8em;
+        background-image: none
+    }
+    
+    .detalleProducto .descripcion {
+        margin-top: 1em;
+    }
+    
+    .boxCircle div:nth-child(1) img{
+        width: 29%;
+    }
     
     .card:hover{
         box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.2)
@@ -2904,6 +2981,7 @@ form.form-inline.my-2.my-lg-0{
     
     #contacPage .map .datosUtiles ul{
         height: 100%;
+        padding: 1em;
     }
     
     #contacPage .map .datosUtiles{
@@ -3079,6 +3157,38 @@ form.form-inline.my-2.my-lg-0{
 
 @media(min-width: 1000px){
     
+    .detalleProducto .descripcion {
+        margin-top: 0em;
+        margin-bottom: 1em;
+    }
+    
+    #compraonlinePage .parentSection .volverPagina{
+        top: 1em;
+    }
+    
+    .parentSection .volverPagina a{
+        position: absolute;
+        top: 0em;
+        left: 1.8em;
+        display: flex;
+        width: max-content;
+    }
+    
+    .parentSection .volverPagina a span{
+        display: block;
+        color: #002575;
+        font-size: 12px;
+    }
+    
+    .parentSection .volverPagina .fa-arrow-left{
+        color: #002575;
+        font-size: .8em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1em;
+    }
+    
     .backTitleDB{
         background-size: contain;
     }
@@ -3170,10 +3280,6 @@ form.form-inline.my-2.my-lg-0{
     #perpielInfo #bernabo .infoLab div{
         margin-top: 0;
     }
-    
-    
-    
-    
     
     #perpielInfo #formulacion .formCards ul{
         display: flex;
@@ -3480,7 +3586,7 @@ form.form-inline.my-2.my-lg-0{
     #producto .productInfo .botonera a{
         width: 48%;
         margin-right: 1em;
-        padding: .6em 2.5em;
+        padding: .6em 1.5em;
         text-align: left;
         font-size: .875em;
     }
@@ -3581,7 +3687,7 @@ form.form-inline.my-2.my-lg-0{
     }
     
     .boxCircle div:nth-child(1) img{
-        width: 29%;
+        width: 39%;
     }
     
     footer .submit input[type="text"]{
@@ -3595,7 +3701,7 @@ form.form-inline.my-2.my-lg-0{
         flex-direction: row;
         justify-content: space-between;
         margin-top: 6em;
-        margin-bottom: 7em;
+        margin-bottom: 4em;
     }
     
     footer .legales .redes>div h3{
@@ -3754,7 +3860,7 @@ form.form-inline.my-2.my-lg-0{
         font-size: 18px;
     }
     
-    #productosListado nav ul li:last-child{
+    .detalleProducto #productosListado nav ul li:last-child{
         display: none
     }
     
@@ -3818,6 +3924,13 @@ form.form-inline.my-2.my-lg-0{
         text-align: left;
     }
     
+    #contacPage .contentOnline div h1 span{
+        font-size: 28px;
+    }
+    
+    .productAction{
+        font-size: 13px;
+    }
 }
 
 @media(min-width: 1160px){
@@ -4047,6 +4160,10 @@ form.form-inline.my-2.my-lg-0{
 
 @media(min-width: 1350px){
     
+    .productAction{
+        font-size: 16px;
+    }
+    
     #listadoProductos #productosListado nav ul li{
         width: 23%;
         margin: inherit;
@@ -4075,6 +4192,25 @@ form.form-inline.my-2.my-lg-0{
 }
 
 @media(min-width: 1500px){
+    
+    .productAction{
+        font-size: 18px;
+    }
+    
+    #producto .productInfo .botonera{
+        justify-content: space-around;
+    }
+    
+    #producto .productInfo .botonera a {
+        padding: 0.6em 2.5em 0.6em 3.5em;
+        height: 60px;
+        width: 43%
+    }
+    
+    #producto .productInfo .botonera a img{
+        max-width: 100%;
+        height: auto;
+    }
     
     #mapa{
         max-height: 700px;
@@ -4590,6 +4726,18 @@ form.form-inline.my-2.my-lg-0{
     #seguinos h4{
         font-size: 70px;
         line-height: .5em
+    }
+    
+    #contacPage .contentOnline div h1 span{
+        font-size: 36px;
+    }
+    
+    #contacPage .map .datosUtiles ul>img{
+        width: 40%;
+    }
+    
+    .parentSection .volverPagina a{
+        left: 11.5vw;
     }
     
 }
