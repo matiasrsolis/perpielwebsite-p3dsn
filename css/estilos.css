@@ -80,6 +80,7 @@
 .btn-blue:hover{
     background-color: #013bb7;
     text-decoration: none;
+    color: #ffffff;
 }
 
 .btn-green{
@@ -94,7 +95,7 @@
 }
 
 .btn-green:hover{
-    background-color: #009a87;
+    background-color: #00e5c9;
     text-decoration: none;
 }
 
@@ -110,7 +111,7 @@
 }
 
 .btn-red:hover{
-    background-color: #bc0019;
+    background-color: #ff6f8b;
     text-decoration: none;
 }
 
@@ -614,8 +615,9 @@ div.screenSlide>h2 span.poppins{
 }
 
 #inicio .sliderInfo div.screenSlide .btn-blue{
-    margin: inherit;
-    width: 70%;
+    margin: 0 auto;
+    width: max-content;
+    margin-top: 2em;
 }
 
 #inicio .sliderInfo div.screenSlide .btn-slide{
@@ -833,6 +835,14 @@ div.screenSlide>h2 span.poppins{
     margin-bottom: .2em;
 }
 
+.cardContent .cardText p.parrafoCard{
+    font-size: 14px!important;
+}
+
+.cardContent .cardText #influencer{
+    display: inline-block!important;
+}
+
 .cardContent .cardText .logoPerpiel{
     font-size: 24px;
     font-weight: 500;
@@ -990,7 +1000,7 @@ div.screenSlide>h2 span.poppins{
 
 
 .logo-momento{
-    width: 70%;
+    width: 63%;
 }
 
 /* -Compra online- */
@@ -1740,7 +1750,8 @@ div.screenSlide>h2 span.poppins{
 
 div#newsletter{
     text-align: center;
-    padding-bottom: 4em;
+    padding-bottom: 6em;
+    padding-top: 5em;
 }
 
 footer{
@@ -1767,13 +1778,15 @@ footer .submit input.btn-red{
 footer .submit input[type="text"]{
     width: 100%;
     margin: auto;
-    margin-bottom: 2em;
-    padding: .3em;
-    border: none;
+    margin-bottom: 1em;
+    padding: .3em .5em;
+    border: solid 1px #002575;
+    background-color: #DBEEFF;
 }
 
 footer .submit input[type="text"]::placeholder{
     font-style: italic;
+    color: #0064BF
 }
 
 footer .legales{
@@ -1823,6 +1836,10 @@ footer .navFooter ul li a{
     
 }
 
+footer .navFooter ul li a:hover{
+    text-decoration: underline;
+    color: #ffffff
+}
 
 
 
@@ -2294,7 +2311,7 @@ form.form-inline.my-2.my-lg-0{
 /* -Elegí producto- */
 #elegiProducto{
     text-align: center;
-    padding: 5em 0;
+    padding: 7em 0 5em 0;
     background-color: #FFFFFF
 }
 
@@ -2319,20 +2336,24 @@ form.form-inline.my-2.my-lg-0{
     max-height: 100%;
 }
 
+#elegiProducto .parentBox .box h4{
+    margin-bottom: 1.5em;
+    font-size: 18px;
+}
+
+#elegiProducto h2{
+    margin-bottom: 1em;
+}
+
 #elegiProducto h3{
     background-image: url(../img/mancha-verde.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     font-size: 4em;
-    line-height: 1em
+    line-height: 1em;
+    margin-bottom: .5em;
 }
-
-
-#elegiProducto .parentBox .box h4{
-    margin-bottom: 1.5em;
-}
-
 
 
 
@@ -2399,7 +2420,14 @@ form.form-inline.my-2.my-lg-0{
 }
 
 .bgNewsletter{
-    background-color: #69ADB6
+    /*background-color: #69ADB6;*/
+    background-image: url(../img/bg-newsletter.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.firma{
+    text-align: center;
 }
 
 
@@ -2535,14 +2563,29 @@ form.form-inline.my-2.my-lg-0{
     
     #inicio .sliderInfo div.screenSlide .btn-blue{
         margin-top: 6em;
-        width: 70%;
-        margin-left: 3em!important;
+        margin-left: auto!important;
     }
     
     
 }
 
 @media(min-width: 768px){
+    
+    .card:hover{
+        box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.2)
+    }
+    
+    .card:hover li a button.btn-green{
+        background-color: #00dec3
+    }
+    
+    .card:hover li a button.btn-red{
+        background-color: #ff6f8b
+    }
+    
+    .card:hover li a button.btn-lineal-blue{
+        background-color: #DBEEFF
+    }
     
     #mapcontent{
         height: 125%;
@@ -2637,7 +2680,7 @@ form.form-inline.my-2.my-lg-0{
     footer .legales{
         flex-direction: row;
         margin: auto 2.5em;
-        margin-top: 8em;
+        margin-top: 5em;
         margin-bottom: 5em;
         flex-wrap: wrap;
     }
@@ -2647,9 +2690,9 @@ form.form-inline.my-2.my-lg-0{
     }
     
     footer .legales .textoLegal{
-        width: 67%;
+        width: 100%;
         margin: 0;
-        margin-left: 3em;
+        margin-bottom: 1.8em;
     }
     
     footer .legales>img{
@@ -2679,10 +2722,18 @@ form.form-inline.my-2.my-lg-0{
     
     footer .textoLegal p{
         text-align: left;
-        max-width: 615px;
+        max-width: 610px;
+        margin: auto;
+        text-align: center;
     }
     
+    footer .submit input[type="text"]{
+        margin-bottom: 2em;
+    }
     
+    .boxCircle div:nth-child(1) a{
+        margin-bottom: 2em;
+    }
     
     
     
@@ -2897,35 +2948,35 @@ form.form-inline.my-2.my-lg-0{
     
     #inicio .sliderInfo div.screenSlide .btn-blue{
         margin-top: 4em;
-        width: 70%;
-        margin-left: 3em!important;
+        margin-left: auto!important;
     }
-    
-    
-    
-    
-   /* #inicio .sliderInfo{
-        height: inherit
-    }*/
-    
     
     #inicio .sliderInfo p.parrafo{
         margin-top: 1em!important;
         margin-bottom: 0!important;
     }
     
-    
-    
-    
     #elegiProducto .parentBox .box img {
         width: 100%;
     }
     
+    .logo-momento{
+        width: 70%;
+    }
+    
+    
+    
+    .cardContent .cardText p.parrafoCard{
+        font-size: 16px!important;
+    }
+    
 }
 
-
-
 @media(min-width: 992px){
+    
+    .cardContent .cardText p{
+        padding: 1em;
+    }
     
     header .redes{
         display: flex;
@@ -3026,7 +3077,6 @@ form.form-inline.my-2.my-lg-0{
         margin: 0 2.5em;
     }
 }
-
 
 @media(min-width: 1000px){
     
@@ -3578,7 +3628,7 @@ form.form-inline.my-2.my-lg-0{
     }
     
     footer .legales .textoLegal{
-        width: 54%;
+        width: 60%;
     }
     
     footer .legales .redes{
@@ -3765,9 +3815,11 @@ form.form-inline.my-2.my-lg-0{
         max-height: 700px;
     }
     
+    footer .textoLegal p{
+        text-align: left;
+    }
+    
 }
-
-
 
 @media(min-width: 1160px){
     header .navbar{
@@ -3932,7 +3984,7 @@ form.form-inline.my-2.my-lg-0{
     #inicio .sliderInfo div.screenSlide .btn-blue{
         margin-top: 4em;
         width: fit-content;
-        margin-left: 0!important;
+        margin-left: auto!important;
         
     }
     
@@ -3974,6 +4026,17 @@ form.form-inline.my-2.my-lg-0{
         margin: auto
     }
     
+    #elegiProducto{
+        padding: 5em 0 5em 0
+    }
+    
+    div#newsletter {
+        text-align: center;
+        padding-bottom: 8em;
+        padding-top: 7em;
+    }
+    
+    
 }
 
 @media(min-width:1279px){
@@ -4011,9 +4074,6 @@ form.form-inline.my-2.my-lg-0{
         padding: 2em 2em;
     }
 }
-
-
-
 
 @media(min-width: 1500px){
     
@@ -4099,8 +4159,7 @@ form.form-inline.my-2.my-lg-0{
     div#newsletter{
         margin: auto;
         margin-top: 0;
-        margin-bottom: 10em;
-        
+        margin-bottom: 8em;
     }
     
     footer{
@@ -4110,8 +4169,8 @@ form.form-inline.my-2.my-lg-0{
     footer .legales{
         margin: auto;
         width: 75%;
-        margin-bottom: 6em;
-        margin-top: 6em;
+        margin-bottom: 4em;
+        margin-top: 0em;
     }
     
     #perpielInfo #bernabo .infoLab{
@@ -4514,6 +4573,24 @@ form.form-inline.my-2.my-lg-0{
         width: 100%;
         padding-left: 1em;
         padding-right: 1em;
+    }
+    
+    #elegiProducto .parentBox .box img{
+        width: 60%;
+    }
+    
+    #elegiProducto .parentBox .box h4{
+        margin-bottom: 1.7em;
+        font-size: 20px;
+    }
+    
+    footer .legales .textoLegal{
+        width: 63%;
+    }
+    
+    #seguinos h4{
+        font-size: 70px;
+        line-height: .5em
     }
     
 }
