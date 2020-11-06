@@ -66,6 +66,12 @@
     background-color: #FFFFFF;
 }
 
+.bgViolet{
+    background-color: #DCE5FF;
+}
+
+
+
 .btn-blue{
     border: none;
     background-color: #002575;
@@ -108,6 +114,9 @@
     padding: .6em 2.5em;
     border-radius: 50px;
     font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-red:hover{
@@ -128,6 +137,55 @@
 
 .btn-lineal-blue:hover{
     background-color: #c4d7ff;
+    text-decoration: none;
+}
+
+.btn-lineal-cian{
+    border: solid 1px #00bdd6;
+    background-color: transparent;
+    color: #00bdd6;
+    font-weight:700;
+    text-transform: uppercase;
+    padding: .6em 2.5em;
+    border-radius: 50px;
+    font-size: 1em;
+}
+
+.btn-lineal-cian:hover{
+    background-color: #c1f8ff;
+    text-decoration: none;
+}
+
+.btn-lineal-red{
+    border: solid 1px #F92F49;
+    background-color: transparent;
+    color: #F92F49;
+    font-weight:700;
+    text-transform: uppercase;
+    padding: .6em 2.5em;
+    border-radius: 50px;
+    font-size: 1em;
+}
+
+.btn-lineal-red:hover{
+    background-color: #fff0f2;
+    text-decoration: none;
+    color: #F92F49
+}
+
+.btn-lineal-green{
+    border: solid 1px #00BAA4;
+    background-color: transparent;
+    color: #00BAA4;
+    font-weight:700;
+    text-transform: uppercase;
+    padding: .6em 2.5em;
+    border-radius: 50px;
+    font-size: 1em;
+}
+
+.btn-lineal-green:hover{
+    background-color: #e8fdfb;
     text-decoration: none;
 }
 
@@ -357,7 +415,7 @@ header .widthMargin{
 }
 
 .navbar-light .navbar-nav .nav-link:hover{
-    border-bottom: solid 5px #0064BF;
+    border-bottom: solid 5px #5C5E5E;
     color: #002575;
 }
 
@@ -480,7 +538,7 @@ header .navbar>div ul li{
     width: 100%
 }
 
-#inicio .sliderInfo button.btn-blue{
+#inicio .sliderInfo button.btn-lineal-blue{
     font-size: .7em;
 }
 
@@ -567,7 +625,7 @@ header .navbar>div ul li{
     font-size: 12px;
 }
 
-#inicio .sliderInfo .btn-blue{
+#inicio .sliderInfo .btn-lineal-blue{
     margin-top: 2em;
 }
 
@@ -614,7 +672,7 @@ div.screenSlide>h2 span.poppins{
     line-height: 1em;
 }
 
-#inicio .sliderInfo div.screenSlide .btn-blue{
+#inicio .sliderInfo div.screenSlide .btn-lineal-blue{
     margin: 0 auto;
     width: max-content;
     margin-top: 2em;
@@ -709,7 +767,7 @@ div.screenSlide>h2 span.poppins{
 
 /* -portal- */
 #portal{
-    padding-top: 9em;
+    padding-top: 6em;
     padding-bottom: 7em;
 }
 
@@ -1158,6 +1216,7 @@ div.screenSlide>h2 span.poppins{
     display: flex;
     align-items: center;
     font-size: 15px;
+    margin-left:1em;
 }
 
 .descrItem p{
@@ -1184,7 +1243,7 @@ div.screenSlide>h2 span.poppins{
 #producto .productInfo .botonera a {
     width: 100%;
     padding: .3em 2em;
-    height: 50px;
+    height: 58px;
     text-align: left;
     font-size: .875em;
     margin-bottom: 1em;
@@ -1204,6 +1263,7 @@ div.screenSlide>h2 span.poppins{
     margin-left: -.5em;
     width: auto;
     max-height: 100%;
+    padding: .2em;
 }
 
 #producto .productInfo .botonera a:hover{
@@ -1333,7 +1393,7 @@ div.screenSlide>h2 span.poppins{
 
 /* -Compra online- */
 .circle-box{
-    min-height:80vh;
+    
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -1349,7 +1409,6 @@ div.screenSlide>h2 span.poppins{
 
 .circle-box>figure{
     width: 150%;
-    background-color: #F92F49;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     border-top-right-radius: 0%;
@@ -1360,7 +1419,7 @@ div.screenSlide>h2 span.poppins{
 }
 
 .circle-box>figure img{
-    min-height: 100%;
+/*    min-height: 100%;*/
     width: 100%;
     object-fit: cover;
 }
@@ -1383,13 +1442,13 @@ div.screenSlide>h2 span.poppins{
 }
 
 #compraonlinePage .circle-box>div img{
-    width: 22%;
+    width: 35%;
     margin-bottom: 1.2em;
 }
 
 #compraonlinePage .circle-box>div h1{
     display: flex;
-    background-image: url(../img/mancha-titulo-rojo.png);
+    background-image: url(../img/mancha-titulo-violet.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1411,13 +1470,13 @@ div.screenSlide>h2 span.poppins{
 
 #compraonlinePage .circle-box>div p,
 #compraonlinePage .circle-box>div p span{
-    font-size: 20px;
-    margin-top: 2em;
+    font-size: 18px;
+    margin-top: 1em;
 }
 
 #compraonlinePage #listaPuntosVenta{
-    padding-top: 8em;
-    padding-bottom: 9em;
+    padding-top: 5em;
+    padding-bottom: 3em;
 }
 
 #compraonlinePage #listaPuntosVenta .encabezado{
@@ -1425,7 +1484,7 @@ div.screenSlide>h2 span.poppins{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 
 #compraonlinePage #listaPuntosVenta h3{
@@ -1488,12 +1547,13 @@ div.screenSlide>h2 span.poppins{
 }
 
 #compraonlinePage #circleOrder .contentOnline{
-    min-height: 70vh;
+/*    min-height: 70vh;*/
 }
 
 #compraonlinePage #circleOrder .contentOnline h2{
     font-size: 24px!important;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
+    text-align: center;
 }
 
 #compraonlinePage #circleOrder .contentOnline form{
@@ -1515,20 +1575,31 @@ div.screenSlide>h2 span.poppins{
     padding: .5em;
 }
 
-#compraonlinePage input.btn-red{
+#compraonlinePage input.btn-lineal-red{
     margin: auto;
     display: block;
     margin-top: 2em;
+    color: #ffffff
+}
+
+#compraonlinePage input.btn-lineal-red:hover{
+    color: #F92F49;
+    background-color: rgba(250, 232, 234, 0.76)
 }
 
 #circleOrder .boxCircle .widthMargin{
-    padding: 5em 0em;
+    padding: 4em 0em 1em 0em;
 }
 
 
 
 #listaPuntosVenta .encabezado h2{
     margin-bottom: 1em;
+    text-align: center;
+}
+
+#listaPuntosVenta .encabezado h2.subrayado {
+    border-bottom: 3px solid #95b8fa;
 }
 
 
@@ -1574,7 +1645,7 @@ div.screenSlide>h2 span.poppins{
     width: 100%;
     height: 10px;
     display: block;
-    background-image: url(../img/subrayado-rojo.png);
+    background-image: url(../img/subrayado-verde.png);
     background-size: contain;
     margin-bottom: 2em;
 }
@@ -1589,8 +1660,9 @@ div.screenSlide>h2 span.poppins{
 }
 
 #comunidadPage .encabezado .navBotonera a:hover{
-    color: #FFFFFF;
+    color: #00b4cc;
     text-decoration: none;
+    background-color: #a9f5ff
 }
 
 #comunidadPage #seguinos{
@@ -1609,7 +1681,7 @@ div.screenSlide>h2 span.poppins{
 
 #comunidadPage #seguinos h2{
     display: flex;
-    background-image: url(../img/mancha-titulo-rojo.png);
+    background-image: url(../img/mancha-titulo-azul.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -1690,7 +1762,6 @@ div.screenSlide>h2 span.poppins{
 }
 
 #notas .card-info a:hover{
-    color: #ffffff;
     text-decoration: none;
 }
 
@@ -1785,11 +1856,11 @@ footer .submit input{
     border-radius: 50px;
 }
 
-footer .submit input.btn-red{
+footer .submit input.btn-lineal-red{
     margin: auto;
 }
 
-footer .submit input[type="text"]{
+footer .submit input[type="email"]{
     width: 100%;
     margin: auto;
     margin-bottom: 1em;
@@ -1797,7 +1868,7 @@ footer .submit input[type="text"]{
     border: solid 1px #002575;
 }
 
-footer .submit input[type="text"]::placeholder{
+footer .submit input[type="email"]::placeholder{
     font-style: italic;
     color: #0064BF
 }
@@ -1901,12 +1972,12 @@ footer .widthMargin.textoLegal{
 
 #perpielInfo #inicio .infoBox p{
     font-size: 16px;
-    margin-top: 3em;
+    margin-top: 2.5em;
     line-height: 1.8em;
 }
 
 #perpielInfo .infoBox{
-    margin-bottom: 2em;
+    margin-bottom: 0;
 }
 
 #perpielInfo #infoBrand figure{
@@ -2015,7 +2086,7 @@ footer .widthMargin.textoLegal{
 }
 
 #btn-up{
-    padding: .5em .8em;
+    padding: .4em .7em;
     background-color: #F92F49;
     color: #ffffff;
     position: fixed;
@@ -2070,7 +2141,7 @@ footer .widthMargin.textoLegal{
 
 #listadoProductos .infoBox{
     padding: 1em 2.5em;
-    padding-bottom: 5.5em;
+    padding-bottom: 4em;
 }
 
 #listadoProductos #inicio>figure{
@@ -2122,6 +2193,7 @@ form.form-inline.my-2.my-lg-0{
 #listadoProductos #productFilter .flex form input{
     border-radius: 38px;
     display: block;
+    border: solid 1px #5C5E5E;
 }
 
 #listadoProductos #productFilter .flex form button{
@@ -2316,7 +2388,11 @@ form.form-inline.my-2.my-lg-0{
 }
 
 #contacPage .contentOnline form li label>span{
-    color: #F92F49;
+    color: #00BAA4;
+}
+
+#contacPage span.subrayado.medium{
+    border-bottom: 3px solid #00BAA4;
 }
 
 #contacPage .contentOnline form button{
@@ -2437,7 +2513,7 @@ form.form-inline.my-2.my-lg-0{
 }
 
 #mapa{
-    height: 400px;
+    height: 280px;
 }
 
 .bgNewsletter{
@@ -2566,7 +2642,7 @@ form.form-inline.my-2.my-lg-0{
         font-size: 1em;
     }
     
-    #inicio .sliderInfo button.btn-blue{
+    #inicio .sliderInfo button.btn-lineal-blue{
         font-size: 1em;
     }
     
@@ -2592,11 +2668,11 @@ form.form-inline.my-2.my-lg-0{
     }
     
     footer .navFooter ul li a{
-        padding: .4em 1em;
+        padding: 0 1em;
         display: block;
         flex-wrap: wrap;
         text-align: center;
-        border-right: 1px solid #F92F49;
+        border-right: 1px solid #ffffff;
     }
     
     footer .navFooter ul li:last-child a{
@@ -2624,7 +2700,7 @@ form.form-inline.my-2.my-lg-0{
         line-height: .9em
     }
     
-    #inicio .sliderInfo div.screenSlide .btn-blue{
+    #inicio .sliderInfo div.screenSlide .btn-lineal-blue{
         margin-top: 6em;
         margin-left: auto!important;
     }
@@ -2651,16 +2727,20 @@ form.form-inline.my-2.my-lg-0{
         box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.2)
     }
     
-    .card:hover li a button.btn-green{
-        background-color: #00dec3
+    .card:hover li a button.btn-lineal-green{
+        background-color: #e0fffb
     }
     
-    .card:hover li a button.btn-red{
-        background-color: #ff6f8b
+    .card:hover li a button.btn-lineal-red{
+        background-color: #fff0f3
     }
     
     .card:hover li a button.btn-lineal-blue{
         background-color: #DBEEFF
+    }
+    
+    .card:hover li a button.btn-lineal-cian{
+        background-color: #d5f5ff
     }
     
     #mapcontent{
@@ -2668,7 +2748,7 @@ form.form-inline.my-2.my-lg-0{
     }
     
     #mapa{
-        height: auto
+        height: 57vh;
     }
     
     #mapa img{
@@ -2724,6 +2804,11 @@ form.form-inline.my-2.my-lg-0{
     
     #listadoProductos #productFilter .flex{
         flex-direction: row;
+        margin-bottom: 0
+    }
+    
+    #listadoProductos #productFilter{
+        padding: 2em 0 2em 0
     }
     
     #listadoProductos #productosListado nav ul{
@@ -2737,14 +2822,8 @@ form.form-inline.my-2.my-lg-0{
         margin-bottom: 2em;
     }
     
-    
-    
-    
-    
-    
-    
     #btn-up{
-        padding: .7em 1em;
+        padding: .4em .7em;
         bottom: 2em;
         right: 2em;
     }
@@ -2803,12 +2882,12 @@ form.form-inline.my-2.my-lg-0{
         text-align: center;
     }
     
-    footer .submit input[type="text"]{
+    footer .submit input[type="email"]{
         margin-bottom: 2em;
     }
     
     .boxCircle div:nth-child(1) a{
-        margin-bottom: 2em;
+        margin-bottom: 0;
     }
     
     
@@ -2893,7 +2972,7 @@ form.form-inline.my-2.my-lg-0{
     #circleOrder .map div{
         border-radius: 50% 50% / 100% 100% 100% 100%;
         margin-left: auto;
-        height: 150%;
+        height: 163%;
         margin-top: -10%;
     }
     /*
@@ -3023,7 +3102,7 @@ form.form-inline.my-2.my-lg-0{
         line-height: 1em
     }
     
-    #inicio .sliderInfo div.screenSlide .btn-blue{
+    #inicio .sliderInfo div.screenSlide .btn-lineal-blue{
         margin-top: 4em;
         margin-left: auto!important;
     }
@@ -3041,10 +3120,12 @@ form.form-inline.my-2.my-lg-0{
         width: 70%;
     }
     
-    
-    
     .cardContent .cardText p.parrafoCard{
-        font-size: 16px!important;
+        font-size: 14px!important;
+    }
+    
+    .mapaCompraOnline {
+        height: 63vh!important;
     }
     
 }
@@ -3052,7 +3133,7 @@ form.form-inline.my-2.my-lg-0{
 @media(min-width: 992px){
     
     .cardContent .cardText p{
-        padding: 1em;
+        padding: 0;
     }
     
     header .redes{
@@ -3067,11 +3148,11 @@ form.form-inline.my-2.my-lg-0{
     
     #perpielInfo #infoBrand{
         display: flex;
-        margin-top: 5em;
+        margin-top: 0em;
     }
     
     #perpielInfo #infoBrand>figure{
-        margin-left:-40%;
+        margin-left:-3%;
     }
     
     #perpielInfo #infoBrand>div{
@@ -3092,7 +3173,7 @@ form.form-inline.my-2.my-lg-0{
     }
     
     .nota{
-        margin-bottom: 6em;
+        margin-bottom: 0em;
     }
     
     .nota #inicio>div{
@@ -3157,6 +3238,22 @@ form.form-inline.my-2.my-lg-0{
 
 @media(min-width: 1000px){
     
+    #circleOrder .boxCircle .widthMargin{
+        padding: 5em 0em em 0em;
+    }        
+    
+    #compraonlinePage .circle-box>div img{
+        width: 20%;
+    }
+    
+    #comunidadPage #inicio p{
+        margin-bottom: 0;
+    }
+    
+    #listadoProductos .infoBox{
+        padding-bottom: 0;
+    }
+    
     .detalleProducto .descripcion {
         margin-top: 0em;
         margin-bottom: 1em;
@@ -3196,7 +3293,7 @@ form.form-inline.my-2.my-lg-0{
     
     
     #listadoProductos section#inicio{
-        height: 70vh;
+        height: 55vh;
     }
 
 
@@ -3216,7 +3313,7 @@ form.form-inline.my-2.my-lg-0{
     }
     
     #listadoProductos #inicio>figure{
-        height: 120vh;
+        height: 130%;
         position: absolute;
         top: 0;
         right: 0;
@@ -3320,7 +3417,7 @@ form.form-inline.my-2.my-lg-0{
         margin-top: 0em;
     }
     
-    #inicio .sliderInfo .btn-blue{
+    #inicio .sliderInfo .btn-lineal-blue{
         margin-left: 0;
     }
     
@@ -3340,7 +3437,7 @@ form.form-inline.my-2.my-lg-0{
         font-size: .9em;
     }
     
-    #inicio .sliderInfo button.btn-blue{
+    #inicio .sliderInfo button.btn-lineal-blue{
         font-size: .8em;
     }
     
@@ -3388,6 +3485,8 @@ form.form-inline.my-2.my-lg-0{
     
     .cardContent figure img{
         object-position: right;
+        position: relative;
+        left: -2em;
     }
     
     .cardContent .cardText h2{
@@ -3492,7 +3591,7 @@ form.form-inline.my-2.my-lg-0{
         width: 77%;
     }
 
-    footer .submit input.btn-red{
+    footer .submit input.btn-lineal-red{
         width: 20%;
         margin: 0
     }
@@ -3581,6 +3680,7 @@ form.form-inline.my-2.my-lg-0{
     #producto .productInfo .botonera{
         display: flex;
         margin-top: 3em;
+        width: 70%;
     }
     
     #producto .productInfo .botonera a{
@@ -3605,9 +3705,13 @@ form.form-inline.my-2.my-lg-0{
     
     /* -Compra online- */
     .circle-box{
-        height:50vh;
+        height:60vh;
         flex-direction: row;
         justify-content: center;
+    }
+    
+    #perpielInfo .circle-box{
+        height:60vh;
     }
 
     .circle-box>div{
@@ -3618,7 +3722,6 @@ form.form-inline.my-2.my-lg-0{
     .circle-box>figure{
         width: 50%;
         overflow: hidden;
-        background-color: #F92F49;
         border-bottom-left-radius: 50%;
         border-bottom-right-radius: 0%;
         border-top-left-radius: 50%;
@@ -3628,7 +3731,6 @@ form.form-inline.my-2.my-lg-0{
     .circle-box>figure img{
         object-fit: cover;
         width: 100%;
-        height: 100%;
     }
     
     #compraonlinePage .circle-box>div{
@@ -3644,8 +3746,12 @@ form.form-inline.my-2.my-lg-0{
         margin-bottom: 3em;
     }
     
+    #compraonlinePage input.btn-lineal-red{
+        margin-top: 1em;
+    }
+    
     #compraonlinePage #circleOrder .contentOnline h2{
-        margin-bottom: 2em;
+        margin-bottom: 1.5em;
         font-size: 24px;
     }
     
@@ -3655,7 +3761,7 @@ form.form-inline.my-2.my-lg-0{
     }
     
     #circleOrder .boxCircle .widthMargin{
-        padding: 4em 5em 3em 5em;
+        padding: 2em;
     }
     
     /* -Comunidad- */
@@ -3681,16 +3787,16 @@ form.form-inline.my-2.my-lg-0{
     }
     
     .boxCircle div:nth-child(1) p{
-        font-size: 24px;
+        font-size: 20px;
         text-align: center;
-        margin-bottom: 3em
+        margin-bottom: 2em
     }
     
     .boxCircle div:nth-child(1) img{
         width: 39%;
     }
     
-    footer .submit input[type="text"]{
+    footer .submit input[type="email"]{
         width: 77%;
         margin: auto;
         margin-bottom: 2em;
@@ -3803,7 +3909,7 @@ form.form-inline.my-2.my-lg-0{
     }
     
     #perpielInfo .circle-box>figure img{
-        height: 50vh;
+        height: 60vh;
     }
     
     #perpielInfo #inicio>div{
@@ -3826,11 +3932,15 @@ form.form-inline.my-2.my-lg-0{
     }
     
     #perpielInfo #inicio h1 span:nth-child(1){
-        font-size: 36px;
+        font-size: 30px;
     }
     
     #perpielInfo #inicio h1 span:nth-child(2){
-        font-size: 72px;
+        font-size: 48px;
+    }
+    
+    #perpielInfo #inicio .infoBox p{
+        margin-top: 1em;
     }
     
     #perpielInfo #bernabo .infoLab .bold{
@@ -3889,7 +3999,7 @@ form.form-inline.my-2.my-lg-0{
         line-height: inherit
     }
     
-    #inicio .sliderInfo div.screenSlide .btn-blue{
+    #inicio .sliderInfo div.screenSlide .btn-lineal-blue{
         margin-top: 6em;
         width: 70%;
         margin-left: 3em!important;
@@ -3930,10 +4040,22 @@ form.form-inline.my-2.my-lg-0{
     
     .productAction{
         font-size: 13px;
+        line-height: 1.5em;
+    }
+    
+    #iconoCarro{
+        max-width: 109px;  
+        display: block;
+        margin-bottom: 1em
     }
 }
 
 @media(min-width: 1160px){
+    
+    .cardContent .cardText p{
+        padding: 1em;
+    }
+    
     header .navbar{
         display: flex;
     }
@@ -3950,6 +4072,17 @@ form.form-inline.my-2.my-lg-0{
 }
 
 @media(min-width: 1200px){
+    
+    .cardContent .cardText p.parrafoCard{
+        font-size: 14px!important;
+    }
+    
+    
+    
+    #portal {
+        padding-top: 5em;
+        padding-bottom: 3em;
+    }
     
 
     #comunidadPage #seguinos>div{
@@ -3990,7 +4123,7 @@ form.form-inline.my-2.my-lg-0{
         
     }
     
-    #inicio .sliderInfo button.btn-blue{
+    #inicio .sliderInfo button.btn-lineal-blue{
         margin: auto;
         width: 256px;
     }
@@ -4093,7 +4226,7 @@ form.form-inline.my-2.my-lg-0{
         text-align: center;
     }
     
-    #inicio .sliderInfo div.screenSlide .btn-blue{
+    #inicio .sliderInfo div.screenSlide .btn-lineal-blue{
         margin-top: 4em;
         width: fit-content;
         margin-left: auto!important;
@@ -4139,7 +4272,7 @@ form.form-inline.my-2.my-lg-0{
     }
     
     #elegiProducto{
-        padding: 5em 0 5em 0
+        padding: 4.5em 0 2em 0
     }
     
     div#newsletter {
@@ -4162,6 +4295,7 @@ form.form-inline.my-2.my-lg-0{
     
     .productAction{
         font-size: 16px;
+        line-height: 1.5em;
     }
     
     #listadoProductos #productosListado nav ul li{
@@ -4193,8 +4327,26 @@ form.form-inline.my-2.my-lg-0{
 
 @media(min-width: 1500px){
     
+    #compraonlinePage input.btn-lineal-red{
+        margin-top: 2em;
+    }
+    
+    #compraonlinePage #listaPuntosVenta{
+        padding-top: 6em;
+        padding-bottom: 4em;
+    }
+    
+    #perpielInfo #inicio .infoBox p{
+        margin-top: 2em;
+    }
+    
+    #perpielInfo #infoBrand{
+        margin-top: 0em;
+    }
+    
     .productAction{
         font-size: 18px;
+        line-height:1.5em
     }
     
     #producto .productInfo .botonera{
@@ -4208,15 +4360,15 @@ form.form-inline.my-2.my-lg-0{
     }
     
     #producto .productInfo .botonera a img{
-        max-width: 100%;
         height: auto;
+        padding: 0;
     }
     
     #mapa{
         max-height: 700px;
     }
     
-    #productosListado nav ul li:last-child{
+    .detalleProducto #productosListado nav ul li:last-child{
         display: block
     }
     
@@ -4242,7 +4394,7 @@ form.form-inline.my-2.my-lg-0{
     }
     
     #listadoProductos section#inicio{
-        height: 80vh;
+        height: 55vh;
     }
     
     
@@ -4267,13 +4419,16 @@ form.form-inline.my-2.my-lg-0{
     }
     
     #listadoProductos h1>.flex .children{
-        font-size: 16em;
+        font-size: 13em;
     }
     
     #listadoProductos h1>.medium{
-        font-size: 48px;
+        font-size: 36px;
     }
     
+    #listadoProductos #inicio>figure{
+        height: 80vh
+    }
     
     footer .navFooter ul{
         margin-bottom: 2em;
@@ -4359,12 +4514,12 @@ form.form-inline.my-2.my-lg-0{
     
     
     #perpielInfo #inicio h1 span:nth-child(1){
-        font-size: 48px;
+        font-size: 36px;
         margin-bottom: .3em
     }
 
     #perpielInfo #inicio h1 span:nth-child(2){
-        font-size: 80px;
+        font-size: 60px;
     }
     
     #perpielInfo #inicio .infoBox{
@@ -4661,7 +4816,8 @@ form.form-inline.my-2.my-lg-0{
     }
     
     #portal{
-        padding-bottom: 11em;
+        padding-top: 6em;
+        padding-bottom: 6em;
     }
     
     #comunidadPage #seguinos>div p{
@@ -4738,6 +4894,20 @@ form.form-inline.my-2.my-lg-0{
     
     .parentSection .volverPagina a{
         left: 11.5vw;
+    }
+    
+    #mapa{
+        height: 50vh;
+    }
+    
+    #compraonlinePage #circleOrder .contentOnline form>div input {
+        display: block;
+        width: 69%;
+        margin-bottom: 2em;
+        border: none;
+        border-radius: 50px;
+        padding: .5em;
+        margin: 0 auto 2em auto;
     }
     
 }
