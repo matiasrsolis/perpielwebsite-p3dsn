@@ -1,0 +1,4925 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,500&display=swap');
+
+@font-face{font-family:children_of_the_starlight;src:url("../fonts/children_of_the_starlight.ttf")}
+
+.children{
+    font-family: 'children_of_the_starlight', sans-serif;
+}
+
+.poppins{
+    font-family: 'poppins', sans-serif;
+}
+
+.fontBlue{
+    color: #002575;
+}
+
+.fontRed{
+    color: #F92F49;
+}
+
+.fontGreen{
+    color: #00BAA4;
+}
+
+.fontWhite{
+    color: #FFFFFF;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.medium{
+    font-weight: 500;
+}
+
+.regular{
+    font-weight: 400;
+}
+
+.block{
+    display: block;
+}
+
+.flex{
+    display: flex;
+}
+
+.bgBlue{
+    background-color: #002575;
+}
+
+.bgBlueLight{
+    background-color: #0064BF;
+}
+
+.bgGreen{
+    background-color: #00BAA4;
+}
+
+.bgRed{
+    background-color: #F92F49;
+}
+
+.bgWhite{
+    background-color: #FFFFFF;
+}
+
+.bgViolet{
+    background-color: #DCE5FF;
+}
+
+
+
+.btn-blue{
+    border: none;
+    background-color: #002575;
+    color: #ffffff;
+    font-weight:700;
+    text-transform: uppercase;
+    padding: .6em 2.5em;
+    border-radius: 50px;
+    font-size: 1em;
+}
+
+.btn-blue:hover{
+    background-color: #013bb7;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn-green{
+    border: none;
+    background-color: #00BAA4;
+    color: #ffffff;
+    font-weight:700;
+    text-transform: uppercase;
+    padding: .6em 2.5em;
+    border-radius: 50px;
+    font-size: 1em;
+}
+
+.btn-green:hover{
+    background-color: #00e5c9;
+    text-decoration: none;
+}
+
+.btn-red{
+    border: none;
+    background-color: #F92F49;
+    color: #ffffff;
+    font-weight:700;
+    text-transform: uppercase;
+    padding: .6em 2.5em;
+    border-radius: 50px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-red:hover{
+    background-color: #ff6f8b;
+    text-decoration: none;
+}
+
+.btn-lineal-blue{
+    border: solid 1px #002575;
+    background-color: transparent;
+    color: #002575;
+    font-weight:700;
+    text-transform: uppercase;
+    padding: .6em 2.5em;
+    border-radius: 50px;
+    font-size: 1em;
+}
+
+.btn-lineal-blue:hover{
+    background-color: #c4d7ff;
+    text-decoration: none;
+}
+
+.btn-lineal-cian{
+    border: solid 1px #00bdd6;
+    background-color: transparent;
+    color: #00bdd6;
+    font-weight:700;
+    text-transform: uppercase;
+    padding: .6em 2.5em;
+    border-radius: 50px;
+    font-size: 1em;
+}
+
+.btn-lineal-cian:hover{
+    background-color: #c1f8ff;
+    text-decoration: none;
+}
+
+.btn-lineal-red{
+    border: solid 1px #F92F49;
+    background-color: transparent;
+    color: #F92F49;
+    font-weight:700;
+    text-transform: uppercase;
+    padding: .6em 2.5em;
+    border-radius: 50px;
+    font-size: 1em;
+}
+
+.btn-lineal-red:hover{
+    background-color: #fff0f2;
+    text-decoration: none;
+    color: #F92F49
+}
+
+.btn-lineal-green{
+    border: solid 1px #00BAA4;
+    background-color: transparent;
+    color: #00BAA4;
+    font-weight:700;
+    text-transform: uppercase;
+    padding: .6em 2.5em;
+    border-radius: 50px;
+    font-size: 1em;
+}
+
+.btn-lineal-green:hover{
+    background-color: #e8fdfb;
+    text-decoration: none;
+}
+
+.btn-lineal-white{
+    border: solid 1px #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-weight:700;
+    text-transform: uppercase;
+    padding: .3em 2.5em;
+    border-radius: 50px;
+    font-size: 1em;
+}
+
+.btn-lineal-white:hover{
+    background-color: rgba(247, 247, 247, 0.3);
+    text-decoration: none;
+}
+
+.bright-inicial{
+    background-image: url(../img/bright-verde-inicio.png);
+    min-height: 31px;
+    width: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+}
+
+.bright-final{
+    background-image: url(../img/bright-verde-final.png);
+    min-height: 31px;
+    width: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+}
+
+.brightRojo-inicial{
+    background-image: url(../img/bright-rojo-inicio.png);
+    min-height: 31px;
+    width: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: .2em;
+    display: block;
+}
+
+.brightRojo-final{
+    background-image: url(../img/bright-rojo-final.png);
+    min-height: 31px;
+    width: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: .2em;
+    display: block;
+}
+
+.backTitleDG{
+    background-image: url(../img/mancha-verde-doblelinea.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.backTitleDB{
+    background-image: url(../img/mancha-azul-doblelinea.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.subrSectionRojo{
+    background-image: url(../img/subrayado-rojo.png);
+    background-repeat: no-repeat;
+    height: 9px;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    margin-bottom: 1em;
+}
+
+.subrSectionVerde{
+    background-image: url(../img/subrayado-verde.png);
+    background-repeat: no-repeat;
+    height: 9px;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    margin-bottom: 1em;
+    display: block;
+}
+
+.backTitleRed{
+    background-image: url(../img/mancha-titulo-rojo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.fullWidth{
+    width: 100%;
+}
+
+.f24{
+    font-size: 24px
+}
+
+.f315{
+    font-size: 31.5px
+}
+
+.f36{
+    font-size: 36px
+}
+
+.f48{
+    font-size: 48px
+}
+
+.f18{
+    font-size: 18px
+}
+
+.f20{
+    font-size: 20px
+}
+
+.f71{
+    font-size: 71px
+}
+
+.f25em{
+    font-size: 2.5em;
+}
+
+.f4em{
+    font-size: 4em;
+}
+
+.f3em{
+    font-size: 3em;
+}
+
+.setInterlinea{
+    line-height: inherit;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #002575;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8em;
+}
+
+body{
+    background-color: #F8FAFF;
+}
+
+.widthMargin{
+    margin: 0 2.5em;
+}
+
+
+
+
+/* -Header- */
+header{
+    background-color: #FFFFFF;
+}
+
+header nav .navbar-brand{
+    padding: 0;
+}
+
+header .navbar{
+    padding: 0;
+}
+
+
+header nav .navbar-brand img{
+    width: 131px;
+    height: auto;
+    margin-left: .5em
+}
+
+header .widthMargin{
+    margin: 0
+}
+
+.navbar-toggler{
+    line-height: inherit;
+}
+
+.navbar-toggler{
+    border: none;
+    border-radius: 0;
+}
+
+.navbar-toggler {
+    padding: .50rem 1rem;
+    height: 64px;
+    width: 64px;
+}
+
+.navbar-collapse ul li a{
+    font-family: 'poppins', sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: #5C5E5E;
+    text-transform: uppercase;
+    padding: 1em 0 .5em 0;
+    margin-right: 0em;
+    display: block;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    border-bottom: solid 5px #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    border-bottom: solid 5px #5C5E5E;
+    color: #002575;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+    border-bottom: solid 5px #F92F49;
+}
+
+
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+    color: #002575;
+}
+
+.nav-link{
+    display: block;
+    width: 100%;
+}
+
+header nav .navbar-brand{
+    margin-left: .2em;
+}
+
+header .redes{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+
+header .redes a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 37px;
+    height: 37px;
+    background-color: #9a9a9a;
+    color: #FFFFFF;
+    border-radius: 50%;
+    margin-left: .3em;
+    margin-top: 1em;
+}
+
+header .redes a i:before{
+    color: #FFFFFF;
+    font-size: 1.4em;
+}
+
+header .redes a#iconoFacebook:hover{
+    background-color: #0064BF;
+    text-decoration: none;
+    transition: all .2s ease;
+    
+}
+
+header .redes a#iconoInstagram:hover{
+    background: linear-gradient(217deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%),
+            linear-gradient(127deg, rgba(255,0,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(255,0,0,.8), rgba(0,0,255,0) 70.71%);
+
+    ;
+    text-decoration: none;
+    transition: all .2s ease
+}
+
+
+/*header .redes img{
+    width: 37px;
+    height: 37px;
+    margin-left: .3em;
+    margin-top: 1em;
+}*/
+
+.fa-bars:before {
+    font-size: 1.7em;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    text-align: center;
+    font-weight: 500
+}
+
+header .navbar>div ul li{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+/* -Slider- */
+#inicio{
+    position: relative
+}
+
+/*
+#inicio .carousel-item{
+    height: 85vh;
+}
+*/
+
+#inicio .carousel-item img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center
+}
+
+#inicio .sliderInfo{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+#inicio .sliderInfo h2{
+    line-height: 1.4em;
+    margin-left: -.5em;
+    width: 100%
+}
+
+#inicio .sliderInfo button.btn-lineal-blue{
+    font-size: .7em;
+}
+
+#inicio h2#absorcionInmediata{
+    background-image: url(../img/mancha-titulo-rojo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#inicio .sliderInfo>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sliderInfo div h2{
+    width: 70%;
+}
+
+.sliderInfo div h2 span.children{
+    font-size: 1.8em;
+    line-height: inherit;
+}
+
+.sliderInfo div h2 span.poppins{
+    font-size: .9em;
+    font-weight: 500;
+}
+
+#inicio .sliderInfo>div{
+    margin: 0 2em;
+    margin-top: 5em;
+}
+
+#inicio .sliderInfo p{
+    font-size: 12px;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    width: 70%;
+}
+
+#inicio .sliderInfo p.parrafo{
+    margin-top: 1em;
+    width: 100%;
+}
+
+
+
+
+
+
+#inicio .slideItem .sliderInfo h2{
+    margin-left: 0;
+}
+
+#inicio .slideItem .sliderInfo .screenSlide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+}
+
+#inicio .slideItem .sliderInfo .screenSlide button{
+    width: inherit!important;
+    line-height: 1.5em;
+}
+
+#inicio .slideItem .sliderInfo>div{
+    margin: 0
+}
+
+#inicio .slideItem .sliderInfo{
+    width: 60%;
+}
+
+
+
+
+
+
+
+#inicio .sliderInfo span.bold{
+    font-size: 12px;
+}
+
+#inicio .sliderInfo .btn-lineal-blue{
+    margin-top: 2em;
+}
+
+#inicio .sliderInfo .btn-blue i::before{
+    margin-left: .3em;
+}
+
+div.screenSlide{
+    margin-top: 3em!important;
+}
+
+div.screenSlide span.poppins{
+    font-size: 20px;
+    line-height: 2.2em
+}
+
+div.screenSlide>h2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.screenSlide>h2 p{
+    font-size: 20em;
+    line-height: 1.5em;
+}
+
+div.screenSlide>h2 p.poppins{
+    margin-bottom: 1em;
+    width: 100%;
+    text-align: center
+}
+
+div.screenSlide>h2 span.poppins{
+    margin-bottom: 0;
+}
+
+#inicio .sliderInfo div.screenSlide>h2 {
+    width: min-content;
+}
+
+.sliderInfo div.screenSlide h2 span.children{
+    line-height: 1em;
+}
+
+#inicio .sliderInfo div.screenSlide .btn-lineal-blue{
+    margin: 0 auto;
+    width: max-content;
+    margin-top: 2em;
+}
+
+#inicio .sliderInfo div.screenSlide .btn-slide{
+    margin-top: 1em
+}
+
+
+
+#inicio .sliderInfo div.screenSlide #humectacion{
+    background-image: none;
+}
+
+
+/* -lanzamiento- */
+#seccion-lanzamiento>div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 3em;
+}
+
+#seccion-lanzamiento .infoLanzamiento h1{
+    background-image: url(../img/mancha-verde.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#seccion-lanzamiento .subrSectionRojo{
+    display: block;
+}
+
+#seccion-lanzamiento h1 span{
+    display: block;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#seccion-lanzamiento h1 div:nth-child(1){
+    justify-content: center;
+}
+
+#seccion-lanzamiento p{
+    max-width: 630px;
+    font-size: 14px;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+#seccion-lanzamiento figure{
+    position: relative;
+    margin-bottom: 5em;
+}
+
+
+#seccion-lanzamiento figure img{
+    width: 100%;
+    margin-left: -25%;
+}
+
+#seccion-lanzamiento figure>div img{
+    width: 200%;
+}
+
+#seccion-lanzamiento .infoLanzamiento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#seccion-lanzamiento .infoLanzamiento .titleSection{
+    font-size: 20px;
+}
+
+#seccion-lanzamiento .subrSectionRojo{
+    margin-bottom: 1em
+}
+
+.titulo-lanzamiento{
+    line-height: 1em;
+    font-size: 56px;
+}
+
+.marginLanzamiento{
+    padding: 1.7em;
+}
+
+
+/* -portal- */
+#portal{
+    padding-top: 6em;
+    padding-bottom: 7em;
+}
+
+#portal ul li a{
+    display: block;
+    height: 100%;
+}
+
+.card{
+    border: none;
+    -webkit-box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.12);
+    -moz-box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.12);
+    box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.12);
+}
+
+.card-columns .card{
+    margin-bottom: 5em;
+}
+
+.cardContent{
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.cardContent figure{
+    margin: 0;
+    padding-bottom: 9em;
+    
+}
+
+.cardContent figure img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    display: block;
+}
+
+.alturaStandard figure img{
+    height: 280px;
+}
+
+.alturaChica{
+    height: 356px;
+}
+
+.cardContent .fondo{
+    position: absolute;
+    bottom: 0;
+    background-image: none;
+    z-index: 8;
+    height: 50%;
+    width: 100%;
+}
+
+.alturaChica .fondo{
+    height: 100%;
+    position: static;
+}
+
+.cardContent .cardText{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    background-image: url("../img/circle2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1em .5em 1em .5em;
+}
+
+.alturaChica .cardText{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em 1em;
+}
+
+.cardContent .cardText h2{
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    line-height: .8em; 
+    display: flex;
+}
+
+.cardContent .cardText h3{
+    margin-bottom: .3em;
+}
+
+.cardContent .cardText .nov{
+    font-size: 2.8em;
+}
+
+.cardContent .cardText .titleSection{
+    font-size: 16px;
+}
+
+#lanzamiento .cardText .titleSection{
+    font-size: 16px;
+    margin-bottom: .2em;
+    display: none;
+}
+
+#lanzamiento .bright-inicial, 
+#lanzamiento .bright-final{
+    display: none
+}
+
+#lanzamiento .cardText .subrSectionRojo{
+    display: none;
+}
+
+.cardContent .cardText p{
+    font-size: 16px;
+    margin-bottom: .2em;
+}
+
+.cardContent .cardText p.parrafoCard{
+    font-size: 14px!important;
+}
+
+.cardContent .cardText #influencer{
+    display: inline-block!important;
+}
+
+.cardContent .cardText .logoPerpiel{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#comuniCard{
+    background-image: url(../img/back_comunidad.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#comuniCard .cardText{
+    background-image: none;
+    height: 100%;
+    padding-top: 2em;
+    justify-content: center;
+}
+
+#comuniCard .titleSection,
+#comuniCard .subrSectionRojo{
+    display: block
+}
+
+#comuniCard .cardText h2{
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 4em;
+    display: flex;
+    align-items: center;
+}
+
+#comuniCard .tituloCard{
+    margin-bottom: 1em
+}
+
+#comuniCard .cardText p{
+    margin-top: 1em;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#comunidadPage #inicio h2{
+    font-size: 18px;
+    background-image: none;
+}
+
+#comunidadPage #inicio p{
+    margin-bottom: 2em;
+}
+
+#notas .mb-4{
+    margin-bottom: 3em!important;
+}
+
+#notas .card-info h5{
+    margin-bottom: 1em;
+}
+
+#notas .card-info p.card-text{
+    font-size: 14px;
+    margin-bottom: 2.5em;
+}
+
+#notas .card-info p.card-text small{
+    display: none
+}
+
+.institucionalCard .cardText h2{
+    font-size: 20px;
+    line-height: 1.5em;
+    display: block;
+}
+
+.institucionalCard .titleSection{
+    display: block;
+}
+
+.institucionalCard hr{
+    border: solid 1px #F92F49;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+#seguinos .subrSectionRojo{
+    display: block;
+}
+
+#seguinos h2{
+    margin-bottom: 0;
+}
+
+#seguinos h4{
+    font-size: 2.7em;
+    padding: 0;
+    line-height: 1em;
+    margin-bottom: 1em;
+}
+
+.seguinos{
+    display: none
+}
+
+#seguinos .brightRojo-inicial,
+#seguinos .brightRojo-final{
+    display: none;
+}
+
+.largeTxtBlock {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#momentoPerpiel .cardText h2{
+    display: flex;
+    margin-top: .7em;
+    margin-bottom: .5em
+}
+
+#momentoPerpiel .cardText h2 span{
+}
+
+#momentoPerpiel .cardText div:nth-child(2){
+    font-size: 1.1em;
+    display: flex;
+    margin-right: .1em
+}
+
+#momentoPerpiel .cardText div:nth-child(2) span{
+    display: none;
+}
+
+#momentoPerpiel .cardText div:nth-child(3){
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 4.5em;
+}
+
+#momentoPerpiel .cardText h4{
+    font-size: 16px;
+}
+
+.infoMomPerpiel{
+    display: block!important;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#momentoPerpiel .cardText .infoMomPerpiel p{
+    font-size: 16px
+}
+
+
+.logo-momento{
+    width: 63%;
+}
+
+/* -Compra online- */
+#circleOrder{
+    background-image: url(../img/back_map.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#circleOrder .contentOnline{
+    display: block;
+}
+
+#circleOrder .map{
+    width: 100%;
+    overflow: hidden;
+}
+
+#circleOrder .map div{
+    overflow: hidden;
+    border-radius: 45% 55% / 50% 50% 0% 0%;
+    width:150%;
+    margin-left: -25%;
+}
+
+#circleOrder .map iframe{
+    display: block;
+    width: 150%;
+    margin-top: -30px;
+}
+
+.review-box {
+    display: none;
+}
+
+.boxCircle div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.boxCircle div:nth-child(1) img{
+    width: 39%;
+    margin-bottom: 2em;
+}
+
+.boxCircle div:nth-child(1) h2{
+    font-size: 4em;
+}
+
+.boxCircle div:nth-child(1) p{
+    margin-bottom: 2em;
+}
+
+.boxCircle div:nth-child(1) a{
+    margin-bottom: 4em;
+    display: flex
+}
+
+.boxCircle div:nth-child(1) a img{
+    width: 29.41px;
+    margin: 0;
+    margin-right: 1em;
+    padding: .2em;
+    height: 40px;
+}
+
+
+.buscaSucursales{
+    display: flex;
+    align-items: center;
+}
+
+
+/* -detalle producto- */
+#producto{
+    display: flex;
+    flex-direction: column;
+}
+
+#producto>div{
+    width: 100%;
+}
+
+#producto .productInfo{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2em;
+    position: relative
+}    
+
+.backLink{
+    position: absolute;
+    top: 2em;
+    left:2em; 
+}
+
+
+#producto .productInfo h2{
+    line-height: .8em;
+    font-size: 3em;
+}
+
+#producto .productImage{
+    background-image: url(../img/circle-red-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 2em;
+}
+
+#producto .productImage img{
+    width: 60%;
+    margin: auto;
+    display: block;
+}
+
+.mayuscula{
+    text-transform: uppercase;
+}
+
+#producto .productInfo .encabezado p{
+    margin-top: 1em;
+    font-size: 16px;
+}
+
+.subrayado{
+    border-bottom: 3px solid #F92F49;
+    display: inline-block;
+}
+
+#producto .productInfo .descripcion h3{
+    display: inline-block;
+    margin-bottom: 1em;
+    margin-top: 2em;
+    font-size: 18px;
+}
+
+.productInfo .encabezado .poppins{
+    font-size: 24px;
+}
+
+#producto .productInfo .descripcion p{
+    max-width: 555px;
+    font-size: 16px;
+    margin: auto;
+}
+
+.productAction{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-left:1em;
+}
+
+.descrItem p{
+    font-size: 16px;
+}
+
+.descrItem p span{
+    font-size: 16px;
+}
+
+.descrItem ul li.flex{
+    margin-bottom: 1em;
+}
+
+#descripcion .descrItem .encabezado h3{
+    font-size: 24px;
+}
+
+#producto .productInfo .botonera{
+    display: block;
+    margin-top: 3em;
+}
+
+#producto .productInfo .botonera a {
+    width: 100%;
+    padding: .3em 2em;
+    height: 58px;
+    text-align: left;
+    font-size: .875em;
+    margin-bottom: 1em;
+}
+
+#producto .productInfo .botonera a figure{
+    width: 14%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#producto .productInfo .botonera a img{
+    margin-right: .5em;
+    margin-left: -.5em;
+    width: auto;
+    max-height: 100%;
+    padding: .2em;
+}
+
+#producto .productInfo .botonera a:hover{
+    text-decoration: none;
+}
+
+#producto figure{
+    position: relative;
+}
+
+#producto figure .compartir{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 98px;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+#producto figure .compartir h5{
+    font-size: 1em;
+}
+
+#producto figure .compartir ul li{
+    margin: auto
+}
+
+#descripcion{
+    padding: 9em 0;
+}
+
+#descripcion .descrItem .encabezado{
+    margin-bottom: 1em;
+}
+
+#descripcion .descrItem .encabezado img{
+    margin-right: 1em;
+}
+
+#descripcion .descrItem .encabezado h3{
+    border-bottom: 4px solid #002575;
+    display: flex;
+    flex: 1
+}
+
+#descripcion .descrItem ul>p{
+    margin-bottom: 2em;
+}
+
+#descripcion .descrItem ul li img{
+    margin-right: 1.5em;
+}
+
+#descripcion .columnDescription .descrItem{
+    margin-top: 4em;
+}
+
+#descripcion .columnDescription .legal{
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    padding: 1em;
+    border: 1px solid #002575;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+}
+
+#descripcion .columnDescription .legal p{
+    margin: 0;
+    padding: 0;
+}
+
+#productosListado{
+    padding: 6em 0;
+}
+
+#productosListado div>h3{
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+#productosListado nav ul li{
+    border-radius: 3px;
+    border: solid 1px #b7c7e8;
+    max-width: 318px;
+    margin: auto;
+    margin-bottom: 3em;
+}
+
+#productosListado nav ul li a{
+    background-image: url(../img/productCard.png);
+    background-size: cover;
+    display: block;
+}
+
+#productosListado nav ul li a figure img{
+    margin: auto;
+    display: block;
+}
+
+#productosListado nav ul li a figure{
+    margin-bottom:0;
+}
+
+#productosListado nav ul li a div{
+    text-align: center;
+    padding: 1em;
+    padding-bottom: 2em;
+}
+
+#productosListado nav ul li a div h4{
+    margin-bottom: 1.4em;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+#productosListado>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+/* -Compra online- */
+.circle-box{
+    
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.circle-box>div{
+    width: 100%;
+    height: 100%;
+    order: 1;
+}
+
+.circle-box>figure{
+    width: 150%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 0%;
+    height: 50vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.circle-box>figure img{
+/*    min-height: 100%;*/
+    width: 100%;
+    object-fit: cover;
+}
+
+
+#compraonlinePage .circle-box{
+    background-image: url(../img/back_online.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#compraonlinePage .circle-box>div{
+    text-align: center;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#compraonlinePage .circle-box>div img{
+    width: 35%;
+    margin-bottom: 1.2em;
+}
+
+#compraonlinePage .circle-box>div h1{
+    display: flex;
+    background-image: url(../img/mancha-titulo-violet.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 2em;
+}
+
+#compraonlinePage .circle-box>div h1 .children{
+    font-size: 3em;
+    line-height: 1em;
+}
+
+.tresPuntos{
+    background-image: url(../img/tres-puntos.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 88px;
+    height: 10px;
+}
+
+#compraonlinePage .circle-box>div p,
+#compraonlinePage .circle-box>div p span{
+    font-size: 18px;
+    margin-top: 1em;
+}
+
+#compraonlinePage #listaPuntosVenta{
+    padding-top: 5em;
+    padding-bottom: 3em;
+}
+
+#compraonlinePage #listaPuntosVenta .encabezado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+#compraonlinePage #listaPuntosVenta h3{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 1.7em;
+}
+
+#compraonlinePage #listaPuntosVenta ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#compraonlinePage #listaPuntosVenta ul li{
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #DBEEFF;
+    border-radius: 3px;
+    margin-bottom: 4em;
+    
+}
+
+#compraonlinePage #listaPuntosVenta ul li h4s
+    padding-bottom: .3em;
+    font-size: 20px;
+}
+
+#compraonlinePage #listaPuntosVenta ul li figure{
+    padding: 2em;
+    background-color: #ffffff;
+}
+
+#compraonlinePage #listaPuntosVenta ul li figure img{
+    width: 68%;
+    margin: auto;
+    display: block;
+    padding: 1em;
+}
+
+#compraonlinePage #listaPuntosVenta ul li .compraInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #DBEEFF;
+    padding: 1em;
+}
+
+#compraonlinePage #listaPuntosVenta ul li .compraInfo a{
+    padding: .2em .2em;
+    display: block;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.compraInfo h4{
+    font-size: 20px;
+}
+
+#compraonlinePage #circleOrder .contentOnline{
+/*    min-height: 70vh;*/
+}
+
+#compraonlinePage #circleOrder .contentOnline h2{
+    font-size: 24px!important;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+#compraonlinePage #circleOrder .contentOnline form{
+    width: 100%;
+}
+
+#compraonlinePage #circleOrder .contentOnline form>div{
+    width: 100%!important;
+    display: block;
+    text-align: center;
+}
+
+#compraonlinePage #circleOrder .contentOnline form>div input{
+    display: block;
+    width: 100%;
+    margin-bottom: 2em;
+    border: none;
+    border-radius: 50px;
+    padding: .5em;
+}
+
+#compraonlinePage input.btn-lineal-red{
+    margin: auto;
+    display: block;
+    margin-top: 2em;
+    color: #ffffff
+}
+
+#compraonlinePage input.btn-lineal-red:hover{
+    color: #F92F49;
+    background-color: rgba(250, 232, 234, 0.76)
+}
+
+#circleOrder .boxCircle .widthMargin{
+    padding: 4em 0em 1em 0em;
+}
+
+
+
+#listaPuntosVenta .encabezado h2{
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+#listaPuntosVenta .encabezado h2.subrayado {
+    border-bottom: 3px solid #95b8fa;
+}
+
+
+/* -Comunidad- */
+#comunidadPage{
+    
+}
+
+#comunidadPage .encabezado{
+    min-height: 80vh;
+    background-image: url(../img/bg-comunidad.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#comunidadPage .encabezado .textBox{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 2em;
+    padding-bottom: 4em;
+}
+
+#comunidadPage .encabezado h1{
+    display: flex;
+    margin-bottom: 1em;
+}
+
+#comunidadPage .encabezado h1 .children{
+    font-size: 2em;
+    line-height: .8em;
+}
+
+.compraInfo h5{
+    font-size: 16px;
+}
+
+#comunidadPage .encabezado .titlePage>span{
+    width: 100%;
+    height: 10px;
+    display: block;
+    background-image: url(../img/subrayado-verde.png);
+    background-size: contain;
+    margin-bottom: 2em;
+}
+
+#comunidadPage .encabezado .navBotonera{
+    margin-top: 2em;
+}
+
+#comunidadPage .encabezado .navBotonera a{
+    display: block;
+    margin-right: 1em;
+}
+
+#comunidadPage .encabezado .navBotonera a:hover{
+    color: #00b4cc;
+    text-decoration: none;
+    background-color: #a9f5ff
+}
+
+#comunidadPage #seguinos{
+    background-color: #FFFFFF;
+}
+
+#comunidadPage #seguinos>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    padding-bottom: 3em;
+    text-align: center;
+}
+
+#comunidadPage #seguinos h2{
+    display: flex;
+    background-image: url(../img/mancha-titulo-azul.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#comunidadPage #seguinos h2 .children{
+    font-size: 3em;
+    line-height: 1.5em;
+}
+
+#comunidadPage #seguinos>div p{
+    margin-top: 2em;
+    font-size: 16px;
+    max-width: 500px;
+    margin-bottom: 2em;
+}
+
+#comunidadPage #seguinos>div span{
+    font-size: 16px;
+}
+
+#comunidadPage #seguinos>div div a{
+    padding: .5em;
+}
+
+#comunidadPage #seguinos>div div a img{
+    height: 50px;
+    width: 50px;
+}
+
+#comunidadPage .circle-box{
+    min-height: inherit
+}
+
+#notas .mb-4{
+    margin-bottom: 2.5em;
+}
+
+#notas{
+    padding-top: 7em;
+    padding-bottom: 3em;
+}
+
+#notas .titulo{
+    display: flex;
+    width: 100%;
+    margin-bottom: 5em
+}
+
+#notas .titulo h2{
+    margin: auto;
+}
+
+#notas .card{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#notas .card-info{
+    width: 150%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: #ffffff;
+    margin-top: -14%;
+    position: relative;
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+
+#notas .card-info .text{
+    width: 57%;
+    margin: auto;
+    text-align: center
+}
+
+#notas .card-info a:hover{
+    text-decoration: none;
+}
+
+.sectionBottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em 0;
+}
+
+.sectionBottom a{
+    display: inline-block;
+}
+
+.sectionBottom a:hover{
+    color: #002575;
+    text-decoration: none;
+}
+
+#accordion .card-header{
+    background-color: #DBEEFF;
+    color: #002575;
+    
+}
+
+.btn:not(:disabled):not(.disabled){
+    color: #002575;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#accordion .card{
+    margin-bottom: 2em;
+}
+
+#faq{
+    margin-bottom: 8em;
+}
+
+#faq .titulo h2{
+    margin: auto;
+    text-align: center
+}
+
+#faq .titulo {
+    display: flex;
+    width: 100%;
+    margin-bottom: 5em;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2.5em;
+}
+
+
+#faq .separador{
+    background-image: url(../img/circle-section.png);
+    background-size: cover;
+    background-position: top;
+    height: 110px;
+    width: 100%;
+}
+
+#faq .faqContent{
+    min-height: 50vh;
+    background-color: #ffffff;
+}
+
+#faq .faqContent{
+    padding-top: 3em
+}
+
+div#newsletter{
+    text-align: center;
+    padding-bottom: 6em;
+    padding-top: 5em;
+}
+
+footer{
+    padding-bottom: 2em
+}
+
+footer #newsletter h4{
+    margin-bottom: .8em;
+}
+
+footer #newsletter p{
+    margin-bottom: 3em;
+}
+
+footer .submit input{
+    display: block;
+    border-radius: 50px;
+}
+
+footer .submit input.btn-lineal-red{
+    margin: auto;
+}
+
+footer .submit input[type="email"]{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 1em;
+    padding: .3em .5em;
+    border: solid 1px #002575;
+}
+
+footer .submit input[type="email"]::placeholder{
+    font-style: italic;
+    color: #0064BF
+}
+
+footer .legales{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8em;
+}
+
+
+
+footer .redes>.flex{
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+
+
+footer .legales>img{    
+    display: block;
+    margin: auto;
+    margin-top: 5em;
+    margin-bottom: 4em;
+    width: 149px;
+    height: 89px;
+}
+
+footer .legales p{
+    font-size: 12px;
+    margin-bottom: 4em;
+}
+
+footer .legales .redes{
+    margin: auto;
+    width: 150px;
+    text-align: center;
+    margin: 2em auto;
+}
+
+footer .navFooter ul{
+    margin-bottom: 6em;
+}
+
+footer .navFooter ul li a{
+    padding: .4em;
+    display: block;
+    text-align: center;
+    
+}
+
+footer .navFooter ul li a:hover{
+    text-decoration: underline;
+    color: #ffffff
+}
+
+
+
+footer .widthMargin.textoLegal{
+    text-align: center;
+}
+
+
+
+
+/* -¿Por qué PerPiel?- */
+
+
+.titles{
+    padding-top: 7em;
+    padding-bottom: 3em;
+}
+
+.titles .titulo{
+    display: flex;
+    width: 100%;
+    margin-bottom: 5em
+}
+
+.titles .titulo h2{
+    margin: auto;
+}
+
+#perpielInfo .circle-box{
+    
+}
+
+#perpielInfo #inicio>div{
+    padding: 2em;
+}
+
+#perpielInfo #inicio h1 span:nth-child(1){
+    font-size: 30px;
+    display: block;
+}
+
+#perpielInfo #inicio h1 span:nth-child(2){
+    font-size: 48px;
+    display: block;
+}
+
+#perpielInfo #inicio .infoBox p{
+    font-size: 16px;
+    margin-top: 2.5em;
+    line-height: 1.8em;
+}
+
+#perpielInfo .infoBox{
+    margin-bottom: 0;
+}
+
+#perpielInfo #infoBrand figure{
+    width: 100%;
+    margin-bottom: 5em;
+    margin-top: 5em;
+}
+
+#perpielInfo #infoBrand figure img{
+    width: 100%
+}
+
+#perpielInfo #infoBrand>div p{
+    margin-bottom: 3em;
+}
+
+#perpielInfo #formulacion .formCards ul li{
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    border: 1px solid #DCE5FF;
+    margin: auto;
+    margin-bottom: 2em;
+    max-width: 432px;
+}
+
+#perpielInfo #formulacion .titulo h2{
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: .6em;
+}
+
+#perpielInfo #formulacion .formCards ul li figure img{
+    width: 100%;
+}
+
+#perpielInfo #formulacion .formCards ul li .formuInfo{
+    padding: 1em 2em;
+}
+
+#perpielInfo #formulacion .formCards ul li .formuInfo p{
+    text-align: center; 
+}
+
+#perpielInfo #bernabo{
+    margin-top: 5em;
+}
+
+#perpielInfo #bernabo .infoLab{
+    display: flex;
+    flex-direction: column;
+    padding: 2.5em;
+}
+
+
+#perpielInfo #bernabo>figure{
+    margin-bottom: 0;
+}
+
+#perpielInfo #bernabo>figure img{
+    object-fit: cover;
+    width: 100%;
+}
+
+#perpielInfo #bernabo .infoLab{
+    margin-top: 2em;
+}
+
+#perpielInfo #bernabo .infoLab div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#perpielInfo #bernabo .infoLab div img,
+#perpielInfo #bernabo .infoLab div a{
+    display: block;
+}
+
+#perpielInfo #bernabo .infoLab h2{
+    margin-bottom: 1.5em;
+}
+
+#perpielInfo #bernabo .infoLab .bold{
+    margin-top: 1.5em;
+}
+
+#perpielInfo #bernabo .infoLab div{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#perpielInfo #bernabo .infoLab .bold{
+    margin-top: 2.5em
+}
+
+#perpielInfo #bernabo .infoLab h2{
+    font-size: 24px;
+}
+
+#perpielInfo #bernabo .infoLab div{
+    margin-top: 2em;
+}
+
+#perpielInfo #bernabo .infoLab .bold{
+    margin-bottom: 3em;
+}
+
+#btn-up{
+    padding: .4em .7em;
+    background-color: #F92F49;
+    color: #ffffff;
+    position: fixed;
+    bottom: 2.8em;
+    right: 1.5em;
+    font-size: 18px;
+    z-index: 9990;
+}
+
+#btn-up:hover{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/* -Productos- */
+
+#listadoProductos section#inicio{
+    max-height: inherit
+}
+
+#listadoProductos .titlePage{
+    margin: auto;
+    text-align: center
+}
+
+#listadoProductos .titlePage h2{
+    font-size: 24px;
+}
+
+#listadoProductos h1{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#listadoProductos h1>.flex{
+    justify-content: center;
+    margin-top: -1em;
+}
+
+#listadoProductos h1>.flex .children{
+    font-size: 6em;
+    line-height: 1em;
+}
+
+
+
+#listadoProductos h1>.medium{
+    font-size: 30px;
+}
+
+#listadoProductos .infoBox{
+    padding: 1em 2.5em;
+    padding-bottom: 4em;
+}
+
+#listadoProductos #inicio>figure{
+    height: 30vh
+}
+
+#listadoProductos #inicio>figure img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+#listadoProductos #productosListado nav ul{
+    display: block;
+    justify-content: space-between;
+}
+
+#listadoProductos #productFilter{
+    padding: 3em 0 2em 0;
+}
+
+#listadoProductos #productFilter .flex{
+    justify-content: space-between;
+}
+
+#listadoProductos #productFilter .flex li{
+    display: flex;
+    flex-direction: column;
+}
+
+#listadoProductos #productFilter .flex li button{
+    display: block;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+#listadoProductos #productFilter .flex form .form-control{
+    width: 218px;
+    margin-right: 1em;
+}
+
+form.form-inline.my-2.my-lg-0{
+    display: flex;
+    justify-content: center;
+}
+
+#listadoProductos #productFilter .flex form input{
+    border-radius: 38px;
+    display: block;
+    border: solid 1px #5C5E5E;
+}
+
+#listadoProductos #productFilter .flex form button{
+     padding: .6em .8em;
+    display: block;
+    width: 43px;
+}
+
+#listadoProductos #productFilter .flex{
+    flex-direction: column;
+}
+
+#productosListado nav ul li a{
+    min-height: 100%;
+}
+
+
+#productosListado .prodPagination{
+    display: block
+}
+
+#productosListado .prodPagination ul{
+    display: flex;
+}
+
+#productosListado .prodPagination ul li a{
+    padding: .5em .9em;
+    border: solid 1px #002575;
+    width: 41px;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: .3em;
+}
+
+#productosListado .pagUp{
+    margin-bottom: 4em;
+}
+
+#productosListado .pagDown{
+    margin-top: 4em;
+}
+
+/*-Nota-*/
+.textMargin{
+    
+}
+
+.backPage{
+    padding: 3em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backPage a{
+    margin: auto;
+    display: inline-block;
+    margin-bottom: 5em;
+}
+
+.nota #inicio h2{
+    width: max-content;
+    background: none;
+    font-size: 18px;
+    margin-bottom: 2em;
+}
+
+.nota section#infoBrand{
+    margin-top: 6em!important;
+}
+
+
+/* -Contacto- */
+#contacPage #circleOrder{
+    background-color: ;
+    background-image: none;
+}
+
+#contacPage .contentOnline>.widthMargin{
+    
+}
+
+#contacPage .contentOnline div h1{
+    font-size: 24px;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+#contacPage .contentOnline div h1 span{
+    font-size: 24px;
+}
+
+#contacPage .contentOnline div>p{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#contacPage .map{
+    background-image: url(../img/circle1-blue.png);
+    background-size: cover;
+}
+
+#contacPage .map .datosUtiles{
+    
+    padding-top: 5em;
+    border-radius: 0;
+    width: 100%;
+    margin-left: 0;
+}
+
+#contacPage .map .datosUtiles ul{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 5em;
+}
+
+#contacPage .map .datosUtiles h3{
+    font-size: 18px;
+    margin-bottom: .5em;
+    width: 100%;
+    border-bottom: 3px solid #002575;
+    padding-bottom: .3em;
+}
+
+#contacPage .map .datosUtiles p,
+#contacPage .map .datosUtiles a{
+    font-size: 16px;
+    display: block;
+    color: #002575;
+    margin-bottom: 1.5em;
+    width: 100%;
+    text-align: left;
+}
+
+#contacPage h3 i:before{
+    margin-right: 1em
+}
+
+#contacPage .map .datosUtiles ul>img{
+    display: block;
+    margin: auto;
+    margin-bottom: 3.5em;
+    margin-top: 0;
+}
+
+#contacPage .map .datosUtiles ul li{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+#contacPage .contentOnline form{
+    width: 100%;
+    margin-top: 0;
+}
+
+#contacPage .contentOnline form li{
+    margin-bottom: 1.5em;
+}
+
+#contacPage .contentOnline form label,
+#contacPage .contentOnline form input,
+#contacPage .contentOnline form textarea{
+    display: block;
+    width: 100%;
+}
+
+#contacPage .contentOnline form label{
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+#contacPage .contentOnline form input{
+    height: 37px;
+    border-radius: 37px;
+    border: 1px solid #0064BF;
+    padding: .5em;
+}
+
+#contacPage .contentOnline form li textarea{
+    border-radius: 25px;
+    height: 95px;
+    border: 1px solid #0064BF;
+    padding: .5em;
+}
+
+#contacPage .contentOnline form li label>span{
+    color: #00BAA4;
+}
+
+#contacPage span.subrayado.medium{
+    border-bottom: 3px solid #00BAA4;
+}
+
+#contacPage .contentOnline form button{
+    margin: auto;
+    display: block;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+
+
+
+/* -Elegí producto- */
+#elegiProducto{
+    text-align: center;
+    padding: 7em 0 5em 0;
+    background-color: #FFFFFF
+}
+
+
+#elegiProducto .parentBox{
+}
+
+#elegiProducto .parentBox .box{
+    width: 100%;
+    margin: 1em auto;
+}
+
+#elegiProducto .parentBox .box figure{
+    background-image: url(../img/back-producto.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#elegiProducto .parentBox .box img {
+    width: 100%;
+    max-height: 100%;
+}
+
+#elegiProducto .parentBox .box h4{
+    margin-bottom: 1.5em;
+    font-size: 18px;
+}
+
+#elegiProducto h2{
+    margin-bottom: 1em;
+}
+
+#elegiProducto h3{
+    background-image: url(../img/mancha-verde.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 4em;
+    line-height: 1em;
+    margin-bottom: .5em;
+}
+
+
+
+.owl-carousel .owl-nav button.owl-prev{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,.5);
+    box-shadow: 0px 0px 5px rgba(0,0,0,.2)
+}
+
+.owl-carousel .owl-nav button.owl-next{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    background-color: rgba(255,255,255,.5);
+    box-shadow: 0px 0px 5px rgba(0,0,0,.2)
+    
+}
+
+
+.palabraDestacada{
+    font-size: 2em;
+    line-height: 0;
+}
+
+.block{
+    display: block;
+}
+
+#iconoCarro{
+    max-width: 129px;    
+}
+
+#mapaSucursales{
+    width: 100%;
+}
+
+#circleOrder .map>div.mapcontent{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#mapa{
+    height: 280px;
+}
+
+.bgNewsletter{
+    /*background-color: #69ADB6;*/
+    background-image: url(../img/bg-newsletter.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.firma{
+    text-align: center;
+}
+
+.parentSection{
+    position: relative;
+}
+
+.parentSection .volverPagina{
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    z-index: 999; 
+}
+
+.parentSection .volverPagina .fa-arrow-left{
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+#comunidadPage .parentSection .volverPagina .fa-arrow-left,
+#contacPage .parentSection .volverPagina .fa-arrow-left{
+    color: #002575
+}
+
+.parentSection .volverPagina a span{
+    display: none;
+}
+
+#listadoProductos .circle-box{
+    min-height: inherit;
+}
+
+#compraonlinePage .parentSection .volverPagina{
+    top: -68%;
+}
+
+.detalleProducto .descripcion {
+    margin-top: 2em;
+    margin-bottom: 2em
+}
+
+
+@media(min-width: 575px){
+    
+    #compraonlinePage .parentSection .volverPagina{
+        top: -120%;
+    }
+    
+    #perpielInfo #bernabo .infoLab h2,
+    #perpielInfo #bernabo .infoLab p{
+        width: 70%;
+        margin: auto;
+    }
+    
+    #perpielInfo #bernabo .infoLab{
+        margin-top: 2em;
+    }
+    
+    #perpielInfo #bernabo .infoLab div{
+        margin-top: 4em;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center
+    }
+    
+    #perpielInfo #bernabo .infoLab h2{
+        margin-bottom: 1.5em;
+    }
+    
+    
+    
+    
+    
+    #perpielInfo #infoBrand>div{
+        width: 70%;
+        margin: auto;
+    }
+    
+    .card-columns {
+        column-count: 2;
+    }
+    
+    .alturaChica {
+        min-height: 519px;
+    }
+    
+    .cardContent figure{
+        min-height: auto;
+    }
+    
+    
+    /* -Comunidad- */
+    #comunidadPage .encabezado{
+        min-height: 50vh
+    }
+    
+    /* -Slider- */
+    div#inicio{
+        max-height: 80vh;
+    }
+    
+    .sliderInfo div h2 span.children{
+        font-size: 2.5em;
+    }
+
+    .sliderInfo div h2 span.poppins{
+        font-size: 1.1em
+    }
+    
+    #inicio .sliderInfo h2{
+        margin-left: 0;
+    }
+    
+    #inicio .sliderInfo p,
+    #inicio .sliderInfo span.bold{
+        font-size: 1em;
+    }
+    
+    #inicio .sliderInfo button.btn-lineal-blue{
+        font-size: 1em;
+    }
+    
+    
+    #perpielInfo #inicio>div{
+        width: 70%;
+        margin: auto;
+    }
+    
+    #perpielInfo #bernabo .infoLab div{
+        margin-top: 0;
+    }
+    
+    
+    footer .navFooter ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+ 
+    footer .navFooter ul li{
+        margin-bottom: 1em;
+    }
+    
+    footer .navFooter ul li a{
+        padding: 0 1em;
+        display: block;
+        flex-wrap: wrap;
+        text-align: center;
+        border-right: 1px solid #ffffff;
+    }
+    
+    footer .navFooter ul li:last-child a{
+        border-right: none;
+    }
+    
+    
+    .card-columns .card{
+        margin-bottom: 5em;
+        width: 90%;
+        margin-left: 1em;
+        margin-top: .4em;
+    }
+    
+    
+    
+    #inicio div.screenSlide>h2 p.poppins{
+        width: 100%!important;
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    
+    .sliderInfo div.screenSlide h2 span.children{
+        font-size: 3em;
+        line-height: .9em
+    }
+    
+    #inicio .sliderInfo div.screenSlide .btn-lineal-blue{
+        margin-top: 6em;
+        margin-left: auto!important;
+    }
+    
+    
+}
+
+@media(min-width: 768px){
+    
+    #producto .productInfo h2{
+        font-size: 5.8em;
+        background-image: none
+    }
+    
+    .detalleProducto .descripcion {
+        margin-top: 1em;
+    }
+    
+    .boxCircle div:nth-child(1) img{
+        width: 29%;
+    }
+    
+    .card:hover{
+        box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.2)
+    }
+    
+    .card:hover li a button.btn-lineal-green{
+        background-color: #e0fffb
+    }
+    
+    .card:hover li a button.btn-lineal-red{
+        background-color: #fff0f3
+    }
+    
+    .card:hover li a button.btn-lineal-blue{
+        background-color: #DBEEFF
+    }
+    
+    .card:hover li a button.btn-lineal-cian{
+        background-color: #d5f5ff
+    }
+    
+    #mapcontent{
+        height: 125%;
+    }
+    
+    #mapa{
+        height: 57vh;
+    }
+    
+    #mapa img{
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .navbar-light .navbar-nav .nav-link{
+        margin-right: 1em;
+    }
+    
+    .seguinos{
+        display: block;
+    }
+    
+    #productosListado .prodPagination{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 3em 0;
+    }
+    
+    #productosListado .pagDown{
+        margin-top: 0;
+    }
+    
+    
+
+    
+    #productosListado{
+        padding: 6em 0 7em 0;
+    }
+    
+    #listadoProductos #productFilter .flex form button{
+        width: 43px;
+    }
+    
+    #listadoProductos #productFilter .flex form .form-control{
+        width: 225px;
+    }
+    
+    #listadoProductos #productFilter .flex li button{
+        width: 181px;
+        margin-right: 1em;
+    }
+    
+    #listadoProductos #productFilter .flex li{
+        flex-direction: row;
+        padding-top: 1em;
+    }
+    
+    #listadoProductos #productFilter .flex{
+        flex-direction: row;
+        margin-bottom: 0
+    }
+    
+    #listadoProductos #productFilter{
+        padding: 2em 0 2em 0
+    }
+    
+    #listadoProductos #productosListado nav ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #listadoProductos #productosListado nav ul li{
+        width: 48%;
+        margin: inherit;
+        margin-bottom: 2em;
+    }
+    
+    #btn-up{
+        padding: .4em .7em;
+        bottom: 2em;
+        right: 2em;
+    }
+    
+    footer{
+        padding-top: 0;
+    }
+        
+    footer .legales{
+        flex-direction: row;
+        margin: auto 2.5em;
+        margin-top: 5em;
+        margin-bottom: 5em;
+        flex-wrap: wrap;
+    }
+    
+    footer .legales>img{
+        
+    }
+    
+    footer .legales .textoLegal{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 1.8em;
+    }
+    
+    footer .legales>img{
+        margin: 3em auto
+    }
+    
+    footer .legales .redes{
+        margin: 3em auto;
+        width: 100%;
+    }
+    
+    footer .legales .redes>.flex{
+        width: 150px;
+        margin: auto;
+        margin-top: 1em
+    }
+    
+    div#newsletter{
+        max-width: 1015px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    div#newsletter>div{
+        margin: 0 2.5em;
+    }
+    
+    footer .textoLegal p{
+        text-align: left;
+        max-width: 610px;
+        margin: auto;
+        text-align: center;
+    }
+    
+    footer .submit input[type="email"]{
+        margin-bottom: 2em;
+    }
+    
+    .boxCircle div:nth-child(1) a{
+        margin-bottom: 0;
+    }
+    
+    
+    
+    #portal ul{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    #portal ul li{
+        width: 48%;
+    }
+    
+    #portal ul li.alturaStandard{
+        height: 490px;
+    }
+    
+    .alturaStandard figure{
+        padding-bottom: 11em;    
+    }
+    
+    .alturaStandard figure img{
+        height: 100%;
+    }
+    
+    .cardContent .cardText .titleSection{
+        display: block;
+    }
+
+    .cardContent .cardText .subrSectionRojo{
+        display: block;
+    }
+    
+    .alturaChica {
+        min-height: 372px;
+    }
+    
+    #lanzamiento .cardText .titleSection{
+        display: block;
+    }
+    
+    #lanzamiento .cardText .subrSectionRojo{
+        display: block;
+    }
+    
+    #seguinos .brightRojo-inicial,
+    #seguinos .brightRojo-final{
+        display: block;
+    }
+    
+    #momentoPerpiel .cardText h2 span{
+        display: block;
+    }
+    
+    
+    /* -Compra online- */
+    #circleOrder .contentOnline{
+        display: flex;
+    }
+    
+/*    #contacPage #circleOrder .contentOnline{
+        display: block;
+    }*/
+    
+    
+    
+    
+    .boxCircle div:nth-child(1){
+        width: 100%;        
+    }
+    
+    .boxCircle div:nth-child(1) img{
+        width: 140px;
+    }
+    
+    .boxCircle div:nth-child(2){
+        overflow: hidden;
+        width: 45%;
+    }
+    
+    #circleOrder .map div{
+        border-radius: 50% 50% / 100% 100% 100% 100%;
+        margin-left: auto;
+        height: 163%;
+        margin-top: -10%;
+    }
+    /*
+    #contacPage #circleOrder .map div{
+        border-radius: 45% 55% / 50% 50% 0% 0%;
+        width: 150%;
+        height: 100%;
+        margin-left: -25%;
+    }
+    
+    #contacPage .boxCircle div:nth-child(1){
+        width: inherit;
+    }
+    
+    #contacPage .boxCircle div:nth-child(2){
+        width: 100%;
+    }
+    
+    #contacPage .boxCircle{
+        max-width: 70%;
+        margin: auto;
+    }*/
+    
+    
+    
+    #circleOrder .map iframe{
+        height: 100%
+    }
+    
+    
+    /* -lanzamiento- */    
+    #seccion-lanzamiento>div{
+        flex-direction: row;
+        padding-top: 6em;
+        padding-right: 2.5em;
+    }
+    
+    #seccion-lanzamiento .infoLanzamiento{
+        width: 60%;
+        padding-left: 2em;
+    }
+    
+    #seccion-lanzamiento figure{
+        width: 40%;
+    }
+    
+    #seccion-lanzamiento figure img{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    
+    
+    #productosListado nav ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #producto #productosListado nav ul li{
+        max-width: 370px;
+    }
+        
+    
+    #contacPage .map .datosUtiles{
+        height: 100%;
+    }
+    
+    #contacPage .map .datosUtiles ul{
+        margin: inherit;
+        
+    }
+    
+    #contacPage .formulario{
+        width: 50%;
+    }
+    
+    #contacPage .map{
+        width: 50%;
+        background-image: url(../img/circle2-blue.png);
+    }
+    
+    #contacPage .map div{
+        margin-top: 0
+    }
+    
+    #contacPage .map .datosUtiles ul{
+        height: 100%;
+        padding: 1em;
+    }
+    
+    #contacPage .map .datosUtiles{
+        width: 100%;
+    }
+    
+    #circleOrder .boxCircle .widthMargin {
+        padding: 3em 0;
+    }
+    
+    #contacPage .map .datosUtiles{
+        padding-top: 3em;
+    }
+    
+    
+    
+    
+    
+    div.screenSlide {
+        margin-top: 0!important;
+        height: 100%;
+    }
+    
+    #inicio div.screenSlide>h2 p.poppins{
+        width: 100%!important;
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 2em;
+    }
+    
+    .sliderInfo div h2 span.poppins{
+        font-size: 54px;
+        margin-bottom: 0;
+            line-height: 1em;
+    }
+    
+    .sliderInfo div.screenSlide h2 span.children{
+        font-size: 3.5em;
+        line-height: 1em
+    }
+    
+    #inicio .sliderInfo div.screenSlide .btn-lineal-blue{
+        margin-top: 4em;
+        margin-left: auto!important;
+    }
+    
+    #inicio .sliderInfo p.parrafo{
+        margin-top: 1em!important;
+        margin-bottom: 0!important;
+    }
+    
+    #elegiProducto .parentBox .box img {
+        width: 100%;
+    }
+    
+    .logo-momento{
+        width: 70%;
+    }
+    
+    .cardContent .cardText p.parrafoCard{
+        font-size: 14px!important;
+    }
+    
+    .mapaCompraOnline {
+        height: 63vh!important;
+    }
+    
+}
+
+@media(min-width: 992px){
+    
+    .cardContent .cardText p{
+        padding: 0;
+    }
+    
+    header .redes{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0;
+    }
+    
+    #listadoProductos #productFilter .flex li{
+        flex-direction: row;
+    }
+    
+    #perpielInfo #infoBrand{
+        display: flex;
+        margin-top: 0em;
+    }
+    
+    #perpielInfo #infoBrand>figure{
+        margin-left:-3%;
+    }
+    
+    #perpielInfo #infoBrand>div{
+        padding: 3em;
+    }
+    
+    #perpielInfo #infoBrand>div p{
+        max-width: 500px;
+        margin: 0 auto 2em auto;
+    }
+    
+    .nota #infoBrand{
+        display: block!important;
+    }
+    
+    .nota #infoBrand>figure{
+         margin-left: 0!important;   
+    }
+    
+    .nota{
+        margin-bottom: 0em;
+    }
+    
+    .nota #inicio>div{
+        padding-left: 9em!important;
+    }
+    
+    #perpielInfo #infoBrand>div p {
+        max-width: 615px;
+    }
+
+    .nota #infoBrand>div p{
+        max-width: 100%;
+    }
+    
+    .nota #infoBrand figure{
+        width: 75%!important;
+        margin: auto!important
+    }
+    
+    
+    
+    /* -Header- */
+    header nav .navbar-brand img{
+        width: 140px;
+    }
+    
+    header .redes a{
+        margin-top: 0;
+    }
+    
+    .navbar-light .navbar-nav .nav-link{
+        font-size: 18px;
+    }
+    
+    .navbar-light .navbar-nav .nav-link{
+        margin-right: 1em;
+        font-weight: 500;
+    }
+    
+    header nav .navbar-brand{
+        margin-left: 0;
+    }
+    
+    header nav .navbar-brand img{
+        margin-right: 1.2em;
+        margin-left: 0
+    }    
+    
+    header .redes img{
+        
+    }
+    
+    header .navbar{
+        display: block;
+        padding-top: 1em;
+    }
+    
+    header .widthMargin{
+        margin: 0 2.5em;
+    }
+}
+
+@media(min-width: 1000px){
+    
+    #circleOrder .boxCircle .widthMargin{
+        padding: 5em 0em em 0em;
+    }        
+    
+    #compraonlinePage .circle-box>div img{
+        width: 20%;
+    }
+    
+    #comunidadPage #inicio p{
+        margin-bottom: 0;
+    }
+    
+    #listadoProductos .infoBox{
+        padding-bottom: 0;
+    }
+    
+    .detalleProducto .descripcion {
+        margin-top: 0em;
+        margin-bottom: 1em;
+    }
+    
+    #compraonlinePage .parentSection .volverPagina{
+        top: 1em;
+    }
+    
+    .parentSection .volverPagina a{
+        position: absolute;
+        top: 0em;
+        left: 1.8em;
+        display: flex;
+        width: max-content;
+    }
+    
+    .parentSection .volverPagina a span{
+        display: block;
+        color: #002575;
+        font-size: 12px;
+    }
+    
+    .parentSection .volverPagina .fa-arrow-left{
+        color: #002575;
+        font-size: .8em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1em;
+    }
+    
+    .backTitleDB{
+        background-size: contain;
+    }
+
+    
+    
+    #listadoProductos section#inicio{
+        height: 55vh;
+    }
+
+
+    #listadoProductos #productosListado nav ul li{
+        width: 31%;
+        margin: inherit;
+        margin-bottom: 4em;
+    }
+    
+
+    
+    
+    #listadoProductos #inicio{
+        position: relative;
+        overflow: hidden;
+        display: block;
+    }
+    
+    #listadoProductos #inicio>figure{
+        height: 130%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    #listadoProductos #inicio>figure img{
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    #listadoProductos .infoBox{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+   
+    #listadoProductos h1>.flex .children{
+        font-size: 9em;
+    }
+    
+    #listadoProductos h1>.medium{
+        font-size: 36px;
+    }
+    
+    
+    footer .legales .textoLegal{
+        margin-left: 0;
+    }
+    
+    #perpielInfo #bernabo .infoLab{
+        padding: 4em;
+        margin-top: 0;
+    }
+    
+    #perpielInfo #bernabo{
+        margin-top: 7em;
+        height: inherit;
+        justify-content: flex-end;
+    }
+    
+    #perpielInfo #bernabo>figure img{
+        height: auto;
+    }
+    
+    #perpielInfo #bernabo>figure img{
+        object-fit: cover;
+        width: 100vw;
+        height: 100%;
+    }
+    
+    #perpielInfo #bernabo .infoLab p{
+        
+    }
+    
+    #perpielInfo #bernabo .infoLab h2, 
+    #perpielInfo #bernabo .infoLab p{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #perpielInfo #bernabo .infoLab div{
+        margin-top: 0;
+    }
+    
+    #perpielInfo #formulacion .formCards ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #perpielInfo #formulacion .formCards ul li{
+        width: 29%;
+        margin: inherit;
+    }
+    
+    #perpielInfo #formulacion .titulo h2{
+        font-size: 24px;
+    }
+    
+    
+    #inicio .sliderInfo>div{
+        margin: 0 2em;
+        margin-top: 1em;
+    }
+    
+    /*-Slider-*/
+    #inicio .sliderInfo{
+        width: 50%;
+    }
+    
+    .sliderInfo h2{
+        font-size: 3.5em;
+    }
+    
+    .sliderInfo h2 span:nth-child(4){
+        font-size: 1.2em;
+    }
+    
+    #inicio .sliderInfo p{
+        font-size: 1em;
+        width: 100%;
+        margin-top: 0em;
+    }
+    
+    #inicio .sliderInfo .btn-lineal-blue{
+        margin-left: 0;
+    }
+    
+    .sliderInfo div h2 span.children{
+        font-size: 1.7em;
+    }
+    
+    #inicio .sliderInfo>div{
+        margin-left: 4.5em;
+    }
+    
+    .sliderInfo div h2 span.poppins{
+        font-size: .9em
+    }
+    
+    #inicio .sliderInfo p, #inicio .sliderInfo span.bold{
+        font-size: .9em;
+    }
+    
+    #inicio .sliderInfo button.btn-lineal-blue{
+        font-size: .8em;
+    }
+    
+    div.screenSlide{
+        margin-top: 0;
+    }
+    
+    
+    /* -Portal- */
+    .infoCard{
+        margin-top: 0;
+        padding: .5em
+    }
+    
+    #lanzamiento .bright-inicial, #lanzamiento .bright-final {
+        display: block;
+        width: 34px;
+        height: 86px;
+    }
+    
+    .cardContent .fondo{
+        
+        height: 100%;
+        right: 0;
+    }
+    
+    .cardContent .cardText{
+        width: 50%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-image: url("../img/circle1.png");
+        padding-left: 3em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1.7em 0em;
+        padding-left: 1em;
+    }
+    
+    .alturaStandard figure{
+        padding-bottom: 0;
+        width: 70%;
+    }
+    
+    .cardContent figure img{
+        object-position: right;
+        position: relative;
+        left: -2em;
+    }
+    
+    .cardContent .cardText h2{
+        font-size: 48px;
+        padding: 0 .1em;
+    }
+    
+    .cardContent .cardText h2 span{
+/*        display: block;*/
+    }
+    
+    .cardContent .cardText h3{
+        margin-bottom: .7em;
+    }
+    
+    .cardContent .cardText .titleSection{
+        font-size: 16px;
+        margin-bottom: .2em;
+    }
+
+    .cardContent .cardText p{
+        font-size: 16px;
+    }
+    
+    #comuniCard .cardText{
+        width: 100%;
+        padding: 1em;
+    }
+    
+    .alturaChica {
+        min-height: inherit;
+        max-height: 262px;
+    }
+    
+    #comuniCard .cardText h2{
+        font-size: 4em;
+    }
+    
+    .institucionalCard .cardText h2{
+        font-size: 24px;
+    }
+    
+    .largeTxtBlock {
+        display: block;
+    }
+    
+    #seguinos h4{
+        font-size: 48px;
+    }
+    
+    #momentoPerpiel .cardText h2{
+        display: block;
+    }
+    
+    #momentoPerpiel .cardText h2>span{
+        display: none;
+    }
+    
+    #momentoPerpiel .cardText div:nth-child(2) span{
+        display: block;
+    }
+    
+    #momentoPerpiel .cardText div:nth-child(3){
+        font-size: 36px;
+    }
+    
+    .infoMomPerpiel{
+        display: block!important;
+        margin-top: -1em
+    }
+    
+    #momentoPerpiel .cardText .infoMomPerpiel p{
+        font-size: 16px
+    }
+    
+    #momentoPerpiel .cardText{
+        left: 0;
+        right: inherit;
+        background-image: url(../img/circle3.png);
+        background-position: right;
+    }
+    
+    #momentoPerpiel figure img{
+        margin-left: 50%;
+    } 
+    
+    #momentoPerpiel .cardText{
+        padding-right: 1em;
+        padding-left: 0;
+    }
+    #circleOrder .map div{
+        border-radius: 50% 50% / 100% 100% 100% 100%;
+    }
+    
+    footer .submit{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    footer .submit input{
+        margin: 0!important;
+        width: 77%;
+    }
+
+    footer .submit input.btn-lineal-red{
+        width: 20%;
+        margin: 0
+    }
+    
+     
+    #newsletter{
+        margin: auto 2.5em;
+    }
+    
+    
+    /*-Lanzamiento-*/
+    #seccion-lanzamiento h1 div:nth-child(2){
+        font-size: 2em;
+    }
+    
+    
+    /*-Detalle roducto-*/
+    #producto{
+        display: flex;
+        flex-direction:row;
+        height: 80vh;
+    }
+    
+    #producto .productInfo{
+        order: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 2em;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+    }    
+    
+    #producto .productImage{
+        background-image: url(../img/circle-red.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left;
+        padding: 2em;
+        order: 1;
+        width: 50%
+    }
+    
+    #producto .productImage img{
+        height: 87%;
+        width: auto;
+    }
+    
+    #producto .productInfo h2{
+        font-size: 4.8em;
+        background-image: none
+    }
+
+    
+    #descripcion .widthMargin{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 5em;
+    }
+    
+    #descripcion .widthMargin>div{
+        width: 45%;
+    }
+    
+    
+    #descripcion .columnDescription{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    #descripcion .columnDescription .descrItem{
+        margin-top: 0em;
+        margin-bottom: 2em;
+    }
+    
+    #descripcion .descrItem>ul{
+        margin-bottom: 0;
+    }
+    
+    #descripcion .columnDescription .legal{
+        margin-bottom: 1rem;
+    }
+    
+    #producto .productInfo .botonera{
+        display: flex;
+        margin-top: 3em;
+        width: 70%;
+    }
+    
+    #producto .productInfo .botonera a{
+        width: 48%;
+        margin-right: 1em;
+        padding: .6em 1.5em;
+        text-align: left;
+        font-size: .875em;
+    }
+    
+    #producto figure .compartir{
+        width: 120px;
+        right: 2em;
+    }
+    
+    
+    #producto #productosListado nav ul li{
+        width: 23%;
+    }
+    
+    
+    
+    /* -Compra online- */
+    .circle-box{
+        height:60vh;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    #perpielInfo .circle-box{
+        height:60vh;
+    }
+
+    .circle-box>div{
+        width: 50%;
+        order: 0;
+    }
+
+    .circle-box>figure{
+        width: 50%;
+        overflow: hidden;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 0%;
+        border-top-left-radius: 50%;
+        height: 150%;
+    }
+    
+    .circle-box>figure img{
+        object-fit: cover;
+        width: 100%;
+    }
+    
+    #compraonlinePage .circle-box>div{
+        text-align: center;
+    }
+    
+    #compraonlinePage #listaPuntosVenta ul{
+        justify-content: space-around;
+    }
+    
+    #compraonlinePage #listaPuntosVenta ul li{
+        width: 30%;
+        margin-bottom: 3em;
+    }
+    
+    #compraonlinePage input.btn-lineal-red{
+        margin-top: 1em;
+    }
+    
+    #compraonlinePage #circleOrder .contentOnline h2{
+        margin-bottom: 1.5em;
+        font-size: 24px;
+    }
+    
+    #comunidadPage #inicio h2{
+        background-image: none;
+        font-size: 20px;
+    }
+    
+    #circleOrder .boxCircle .widthMargin{
+        padding: 2em;
+    }
+    
+    /* -Comunidad- */
+    #comunidadPage .encabezado{
+        min-height: 38vh
+    }
+    
+    #comunidadPage .encabezado h1 .children{
+        font-size: 3em;
+        line-height: .7em;
+    }
+    
+    #comunidadPage .encabezado p,
+    #comunidadPage .encabezado p>span{
+        font-size: 24px;
+    }
+
+    
+    
+    .boxCircle div:nth-child(1) h2{
+        font-size: 5em;
+        text-align: center
+    }
+    
+    .boxCircle div:nth-child(1) p{
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 2em
+    }
+    
+    .boxCircle div:nth-child(1) img{
+        width: 39%;
+    }
+    
+    footer .submit input[type="email"]{
+        width: 77%;
+        margin: auto;
+        margin-bottom: 2em;
+        padding: .7em;
+    }
+    
+    footer .legales{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 6em;
+        margin-bottom: 4em;
+    }
+    
+    footer .legales .redes>div h3{
+        text-align: center;
+        width: 100%;
+    }
+    
+    footer .legales .redes>div a{
+        margin-left: 0;
+    }
+    
+    footer .textoLegal{
+        margin-top:3em;
+    }
+    
+    footer .textoLegal p{
+        
+        margin: inherit;
+    }
+    
+    .firma{
+        margin-top: 1em;
+        text-align: center;
+    }
+    
+    footer .legales>img{
+        margin: 0;
+        margin-top: 0;
+    }
+    
+    footer .legales .textoLegal{
+        width: 60%;
+    }
+    
+    footer .legales .redes{
+        margin: 0;
+        width: 20%;
+    }
+    
+    footer .navFooter ul{
+        margin-bottom: 2em;
+    }
+    
+    
+    
+    #comunidadPage #seguinos>div p{
+        margin-top: 2em;
+        font-size: 20px;
+        max-width: 600px;
+    }
+
+    #comunidadPage #seguinos>div span{
+        font-size: 20px;
+        margin-bottom: 0em;
+    }
+    
+    #comunidadPage #seguinos h2 .children{
+        margin-bottom: 0;
+    }
+    
+    #comunidadPage #seguinos>div p{
+        margin-top: .5em;
+    }
+    
+    #comunidadPage .tresPuntos{
+        height: 10px;
+        width: 90px;
+    }
+    
+    
+    #comunidadPage #seguinos>div div a img{
+        width: 60px;
+        height: 60px;
+    }
+    
+    #comunidadPage #seguinos h2 .children{
+        font-size: 3em;
+    }
+    
+    #comunidadPage #seguinos h2{
+        margin-bottom: .5em;
+    }
+    
+    
+    #perpielInfo .circle-box>figure{
+        background-color: transparent;
+    }
+    
+    #bernabo{
+        display: flex;
+        flex-direction: row-reverse!important;
+    }
+    
+    #bernabo>figure{
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 0%;
+        border-top-right-radius: 50%;
+        border-top-left-radius: 0%;
+    }
+    
+    #perpielInfo .circle-box>figure img{
+        height: 60vh;
+    }
+    
+    #perpielInfo #inicio>div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #perpielInfo #inicio h1{
+        width: 100%;
+    }
+    
+    #perpielInfo #inicio p{
+        max-width: 445px;
+    }
+    
+    #perpielInfo #inicio .infoBox{
+        width: 50%;
+        padding-left: 6em;
+    }
+    
+    #perpielInfo #inicio h1 span:nth-child(1){
+        font-size: 30px;
+    }
+    
+    #perpielInfo #inicio h1 span:nth-child(2){
+        font-size: 48px;
+    }
+    
+    #perpielInfo #inicio .infoBox p{
+        margin-top: 1em;
+    }
+    
+    #perpielInfo #bernabo .infoLab .bold{
+        margin-bottom: 1.7em;
+    }
+    
+    #perpielInfo #bernabo .infoLab div{
+        margin-top: 1.2em
+    }
+    
+    
+    
+    #contacPage .formulario{
+        padding-top: 3em;
+    }
+    
+    #contacPage .boxCircle .widthMargin{
+        padding: 3em;
+    }
+    
+    #contacPage .map .datosUtiles ul li{
+        margin-bottom: 1em;
+    }
+    
+    #contacPage .map .datosUtiles p, 
+    #contacPage .map .datosUtiles a{
+        font-size: 18px;
+    }
+    
+    .detalleProducto #productosListado nav ul li:last-child{
+        display: none
+    }
+    
+    
+    
+    
+    
+    div.screenSlide {
+        margin-top: 0!important;
+        height: 100%;
+    }
+    
+    #inicio div.screenSlide>h2 p.poppins{
+        width: 100%!important;
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    
+    .sliderInfo div h2 span.poppins{
+        font-size: 50px;
+        margin-bottom: 0
+    }
+    
+    .sliderInfo div.screenSlide h2 span.children{
+        font-size: 2em;
+        line-height: inherit
+    }
+    
+    #inicio .sliderInfo div.screenSlide .btn-lineal-blue{
+        margin-top: 6em;
+        width: 70%;
+        margin-left: 3em!important;
+    }
+    
+    #inicio .slideItem .sliderInfo .screenSlide button{
+        margin-top: 1em;
+        margin-left: 0!important
+    }
+    
+    
+    .alturaChica .cardText{
+        width: 100%;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    
+    
+    
+    
+    #circleOrder .map>div.mapcontent{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+    #mapa{
+        max-height: 700px;
+    }
+    
+    footer .textoLegal p{
+        text-align: left;
+    }
+    
+    #contacPage .contentOnline div h1 span{
+        font-size: 28px;
+    }
+    
+    .productAction{
+        font-size: 13px;
+        line-height: 1.5em;
+    }
+    
+    #iconoCarro{
+        max-width: 109px;  
+        display: block;
+        margin-bottom: 1em
+    }
+}
+
+@media(min-width: 1160px){
+    
+    .cardContent .cardText p{
+        padding: 1em;
+    }
+    
+    header .navbar{
+        display: flex;
+    }
+    
+    header .navbar{
+        padding-top: .8em;
+    }
+    
+    .card-columns .card{
+        width: 96%;
+        margin-left: .7em;
+        margin-bottom: 2.5em;
+    }
+}
+
+@media(min-width: 1200px){
+    
+    .cardContent .cardText p.parrafoCard{
+        font-size: 14px!important;
+    }
+    
+    
+    
+    #portal {
+        padding-top: 5em;
+        padding-bottom: 3em;
+    }
+    
+
+    #comunidadPage #seguinos>div{
+        padding: 2.5em;
+    }
+    
+    #accordion{
+        width: 70%;
+        margin: auto;
+    }
+    
+    #inicio .sliderInfo>div{
+        margin-top: 4em;
+    }
+    
+    #inicio .sliderInfo{
+        width: 50%;
+    }
+    
+    .sliderInfo div h2 span.children{
+        font-size: 2em;
+        line-height: inherit;
+    }
+    
+    .sliderInfo div h2 span.poppins{
+        font-size: 1em;
+    }
+    
+    #inicio .sliderInfo>div{
+        width: 70%;
+        margin-left: 22%;
+        margin-top: 10%;
+    }
+    
+    #inicio .sliderInfo>div>div{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    #inicio .sliderInfo button.btn-lineal-blue{
+        margin: auto;
+        width: 256px;
+    }
+    
+    #inicio .sliderInfo p{
+        text-align: center;
+        line-height: 2em;
+        margin-bottom: 2em;
+        margin-top: 0em;
+    }
+    
+    .sliderInfo div h2 span:first-child{
+        position: relative;
+        left: .2em;
+        top: .1em;
+    }
+    
+    #seccion-lanzamiento>div{
+        padding-top: 2em;
+        padding-bottom: 2em;;
+    }
+    
+    #seccion-lanzamiento .infoLanzamiento{
+        padding: 0 5em;
+    }
+    
+    #seccion-lanzamiento h1 span{
+        font-size: 36px;
+    }
+    
+    #seccion-lanzamiento .infoLanzamiento h1{
+        margin-top: .7em;
+    }
+    
+    #seccion-lanzamiento h1 div:nth-child(2){
+        margin-top: -.2em;
+    }
+    
+    #seccion-lanzamiento figure img{
+        width: 90%;
+    }
+    
+    #seccion-lanzamiento p{
+        margin-bottom: 0;
+    }
+    
+    #btn-up{
+        bottom: 3em;
+    }
+    
+    
+    
+    
+    
+    
+
+    
+    #inicio .sliderInfo div.screenSlide {
+        margin-top: 0!important;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #inicio .sliderInfo div.screenSlide>h2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    #inicio div.screenSlide>h2 span.poppins{
+        width: 100%;
+        display: block;
+        text-align: center
+    }
+    
+    #inicio div.screenSlide>h2 p.poppins{
+        width: 100%!important;
+        font-size: 20px;
+        margin-bottom: 1em;
+    }
+    
+    #inicio .sliderItem div.screenSlide>h2 p.poppins{
+        margin-bottom: 0
+    }
+    
+    .sliderInfo div h2 span.poppins{
+        font-size: 40px;
+        margin-bottom: 0
+    }
+    
+    .sliderInfo div.screenSlide h2 span.children{
+        font-size: 1.7em;
+        line-height: .9em;
+        width: 100%;
+        text-align: center;
+    }
+    
+    #inicio .sliderInfo div.screenSlide .btn-lineal-blue{
+        margin-top: 4em;
+        width: fit-content;
+        margin-left: auto!important;
+        
+    }
+    
+    
+    
+    
+    #inicio .slideItem .sliderInfo{
+        
+    }
+    
+    #inicio .slideItem .sliderInfo .screenSlide{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #inicio .slideItem .sliderInfo .screenSlide button{
+        width: max-content!important;
+        margin-left: inherit!important;
+        margin-top: 2em;
+    }
+    
+    .slideItem .sliderInfo div h2 span:first-child{
+        left: 0;
+    }
+    
+    .slideItem .sliderInfo div h2 span.children{
+        width: auto;
+        padding: .1em;
+    }
+    
+    
+    
+    
+    #elegiProducto .parentBox .box img {
+        width: 65%;
+        margin: auto
+    }
+    
+    #elegiProducto{
+        padding: 4.5em 0 2em 0
+    }
+    
+    div#newsletter {
+        text-align: center;
+        padding-bottom: 8em;
+        padding-top: 7em;
+    }
+    
+    
+}
+
+@media(min-width:1279px){
+    #perpielInfo #infoBrand>figure{
+        margin-left:0;
+        width: 50%;
+    }
+}
+
+@media(min-width: 1350px){
+    
+    .productAction{
+        font-size: 16px;
+        line-height: 1.5em;
+    }
+    
+    #listadoProductos #productosListado nav ul li{
+        width: 23%;
+        margin: inherit;
+        margin-bottom: 4em;
+    }
+    
+    
+    
+    
+    footer .legales{
+        align-items: flex-start;
+    }
+    
+    
+    .navbar-light .navbar-nav .nav-link{
+        margin-right: 1.2em;
+    }
+    
+    header .redes img{
+        margin-left: 1em;
+    }
+    
+    #perpielInfo #formulacion .formCards ul li .formuInfo{
+        padding: 2em 2em;
+    }
+}
+
+@media(min-width: 1500px){
+    
+    #compraonlinePage input.btn-lineal-red{
+        margin-top: 2em;
+    }
+    
+    #compraonlinePage #listaPuntosVenta{
+        padding-top: 6em;
+        padding-bottom: 4em;
+    }
+    
+    #perpielInfo #inicio .infoBox p{
+        margin-top: 2em;
+    }
+    
+    #perpielInfo #infoBrand{
+        margin-top: 0em;
+    }
+    
+    .productAction{
+        font-size: 18px;
+        line-height:1.5em
+    }
+    
+    #producto .productInfo .botonera{
+        justify-content: space-around;
+    }
+    
+    #producto .productInfo .botonera a {
+        padding: 0.6em 2.5em 0.6em 3.5em;
+        height: 60px;
+        width: 43%
+    }
+    
+    #producto .productInfo .botonera a img{
+        height: auto;
+        padding: 0;
+    }
+    
+    #mapa{
+        max-height: 700px;
+    }
+    
+    .detalleProducto #productosListado nav ul li:last-child{
+        display: block
+    }
+    
+    #perpielInfo #formulacion .titulo h2{
+        font-size: 36px;
+    }
+    
+    #descripcion .widthMargin{
+        margin: auto;
+    }
+    
+        #seccion-lanzamiento>div{
+            padding-top: 2em;
+            padding-bottom: 0;
+        }
+    
+    #inicio .sliderInfo button.btn-blue{
+        font-size: 20px;
+    }
+    
+    #inicio .sliderInfo p{
+        font-size: 20px;
+    }
+    
+    #listadoProductos section#inicio{
+        height: 55vh;
+    }
+    
+    
+    #listadoProductos #productFilter .flex form .form-control{
+        width: 80%;
+        box-sizing: border-box;
+        padding: 1.3em 1em;
+    }
+    
+    #listadoProductos #productFilter .flex li {
+        padding-top: 2em;
+    }
+    
+    form.form-inline.my-2.my-lg-0{
+        width: 30%;
+    }
+    
+    #listadoProductos #productFilter .flex li button {
+        width: 233px;
+        padding: .7em;
+        margin-right: 2em;
+    }
+    
+    #listadoProductos h1>.flex .children{
+        font-size: 13em;
+    }
+    
+    #listadoProductos h1>.medium{
+        font-size: 36px;
+    }
+    
+    #listadoProductos #inicio>figure{
+        height: 80vh
+    }
+    
+    footer .navFooter ul{
+        margin-bottom: 2em;
+    }
+    
+    footer #newsletter h4{
+        font-size: 36px;
+    }
+    
+    footer #newsletter p{
+        font-size: 20px;
+    }
+    
+    footer .navFooter ul li a{
+        font-size: 20px;
+    }
+    
+    div#newsletter{
+        margin: auto;
+        margin-top: 0;
+        margin-bottom: 8em;
+    }
+    
+    footer{
+        padding-top: 0;
+    }
+    
+    footer .legales{
+        margin: auto;
+        width: 75%;
+        margin-bottom: 4em;
+        margin-top: 0em;
+    }
+    
+    #perpielInfo #bernabo .infoLab{
+        padding: 4em;
+        padding-left: 8em;
+        display: block;
+    }
+    
+    #perpielInfo #bernabo .infoLab h2{
+        font-size: 36px;
+        max-width: 700px
+    }
+    
+    #perpielInfo #bernabo .infoLab p{
+        font-size: 20px;
+        max-width: 700px
+    }
+    
+    #perpielInfo #bernabo .infoLab>div{
+        font-size: 20px;
+        max-width: 700px;
+    }
+    
+    #perpielInfo #bernabo{
+        margin-top: 10em;
+        padding: 0;
+        position: relative;
+        overflow: hidden
+    }
+    
+    #perpielInfo #bernabo .infoLab>h2{
+        margin-bottom: 1.5em
+    }
+    
+    #perpielInfo #bernabo .infoLab>.bold {
+        margin: 1em 0;
+    }
+    
+    #perpielInfo #bernabo figure{
+        width: 40%;
+        height: 133%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    #perpielInfo #bernabo .infoLab{
+        width: 60%;
+        margin-left: 40%;
+    }
+    
+    
+    #perpielInfo #inicio h1 span:nth-child(1){
+        font-size: 36px;
+        margin-bottom: .3em
+    }
+
+    #perpielInfo #inicio h1 span:nth-child(2){
+        font-size: 60px;
+    }
+    
+    #perpielInfo #inicio .infoBox{
+        padding-left: 12.5%;
+    }
+    
+    #perpielInfo #infoBrand>div p{
+        font-size: 18px;
+    }
+    
+    #perpielInfo #infoBrand>figure{
+        width: 85%;
+        margin-left: -10%;
+    }
+    
+    #perpielInfo #formulacion .formCards ul li .formuInfo p{
+        font-size: 20px;
+    }
+    
+    
+    
+    
+    .sliderInfo div h2 span.children{
+        font-size: 2.5em;
+    }
+    
+    .sliderInfo div h2 span.poppins{
+        font-size: 1.3em;
+    }
+    
+    #perpielInfo #inicio .infoBox p{
+        font-size: 18px;
+        max-width: 500px;
+    }
+    
+    
+    /* -Header- */
+    
+    header .redes img{
+        margin-top: 0;
+    }
+    
+    header .navbar{
+        padding-top: 0;
+        margin: auto;
+    }
+    
+    .navbar-light .navbar-nav .nav-link{
+        padding: 1.3em 0 .7em 0;
+    }
+    
+    /*-Slider-*/
+    #inicio .sliderInfo{
+        width: 50%;
+    }
+    
+    .sliderInfo h2{
+        font-size: 4.5em;
+    }
+    
+    .sliderInfo h2 span:nth-child(4){
+        font-size: 1.6em;
+    }
+    
+    #inicio .sliderInfo p{
+        font-size: 20px;
+    }
+    
+    #inicio .sliderInfo .btn-blue{
+        margin-left: 0;
+    }
+    
+    
+    .sliderInfo div h2 span.poppins{
+        font-size: 60px;
+        margin-bottom: 0
+    }
+    
+    .sliderInfo div.screenSlide h2 span.children{
+        font-size: 1.9em;
+        line-height: .9em;
+        width: auto;
+        text-align: center;
+        padding: 0 24px;
+    }
+    
+    #inicio div.screenSlide>h2 p.poppins{
+        margin-bottom: 1em;
+    }
+    
+    #inicio div.screenSlide>h2 p.poppins{
+        margin-bottom: 2em;
+        font-size: 20px;
+    }
+    
+    .sliderInfo div h2 span.poppins{
+        font-size: 68px;
+        margin-bottom: 0
+    }
+    
+    
+    
+    
+    
+    
+    
+    .widthMargin{
+        margin: 0em;
+        width: 75%;
+        margin: auto;
+    }
+    
+    .cardContent .cardText{
+        width: 324px;
+    }
+    
+    .cardContent .cardText h2{
+        font-size: 4.5em;
+    }
+    
+    #comuniCard .cardText h2{
+        font-size: 4.5em;
+    }
+    
+    .institucionalCard .cardText h2{
+        font-size: 26px;
+    }
+    
+    .cardContent .cardText{
+        padding: 2em 0;
+        padding-left: 1em;
+    }
+    
+    #momentoPerpiel .cardText div:nth-child(3){
+        font-size: 48px;
+    }
+    
+    
+    
+    
+    #producto .productInfo h2{
+        font-size: 6em;
+        margin-top: 0em
+    }
+    
+    #descripcion .widthMargin>.descrItem{
+        width: 50%;
+    }
+    
+    #descripcion .widthMargin>.columnDescription{
+        width: 40%;
+    }
+    
+    
+    .nota #infoBrand>div p{
+        max-width: 100%!important;
+    }
+    
+    .nota #inicio .infoBox{
+        padding-left: 12.5%!important;
+    }
+    
+    
+    #contacPage .boxCircle .widthMargin{
+        padding: 0;
+        margin-left: 12.5%;
+        padding-right: 5em;
+    }
+    
+    #contacPage .formulario{
+        margin-top: 3em;
+        margin-bottom: 7em;
+        justify-content: flex-start
+    }
+    
+    #contacPage .map .datosUtiles{
+        padding: 0;
+        margin-top: 3em;
+    }
+    
+    #contacPage .map .datosUtiles ul{
+        margin-top: 0;
+        width: 50%;
+    }
+    
+    #contacPage #circleOrder .boxCircle{
+        min-height: 80vh;
+    }
+    
+    #contacPage .boxCircle .widthMargin,
+    #contacPage .map .datosUtiles{
+        padding-top: 3em;
+    }
+    
+    #contacPage .contentOnline div h1 {
+        font-size: 48px;
+        margin-bottom: .5em;
+    }
+    
+    #contacPage .contentOnline div>p{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    #contacPage .contentOnline form label{
+        font-size: 20px;
+    }
+    
+    #contacPage .map .datosUtiles ul>img{
+        margin-bottom: 4em;
+    }
+    
+    #contacPage .map .datosUtiles h3{
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    #contacPage .map .datosUtiles p, #contacPage .map .datosUtiles a{
+        font-size: 24px;
+    }
+    
+    
+    #seccion-lanzamiento h1 div:nth-child(2){
+        font-size: 4em;
+        line-height: .7em;
+    }
+    
+    #seccion-lanzamiento .infoLanzamiento{
+        margin: 0;
+        padding: 0;
+        width: inherit;
+    }
+    
+    #seccion-lanzamiento figure img{
+        width: 60%;
+        margin-bottom: 1em;
+    }
+    
+    #seccion-lanzamiento h1 span{
+        font-size: 60px;
+        line-height: 2em;
+    }
+    
+    #seccion-lanzamiento .infoLanzamiento .titleSection{
+        font-size: 28px;
+    }
+    
+    #seccion-lanzamiento>div{
+        margin-top: 0;
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+    
+    #seccion-lanzamiento p,
+    #seccion-lanzamiento p>span{
+        font-size: 20px;
+        max-width: 694px;
+    }
+    
+    #lanzamiento .cardText .titleSection{
+        font-size: 20px;
+    }
+    
+    .cardContent .cardText .titleSection{
+        font-size: 20px;
+    }
+    
+    .cardContent .cardText p{
+        font-size: 20px;
+    }
+    
+    #momentoPerpiel .cardText .infoMomPerpiel p{
+        font-size: 20px;
+    }
+    
+    #comuniCard .cardText p{
+        font-size: 20px;
+    }
+    
+    #momentoPerpiel .cardText h4{
+        font-size: 24px;
+    }
+    
+    #comuniCard .cardText h2{
+        font-size: 5em;
+    }
+    
+    .boxCircle div:nth-child(1) img{
+        width: 20%;
+    }
+    
+    .boxCircle div:nth-child(1) h2{
+        font-size: 7em;
+    }
+    
+    #portal{
+        padding-top: 6em;
+        padding-bottom: 6em;
+    }
+    
+    #comunidadPage #seguinos>div p{
+        margin-top: 0;
+    }
+    
+    #comunidadPage #inicio h2{
+        font-size: 24px;
+    }
+    
+    #comunidadPage .encabezado .textBox{
+        padding-top: 6em;
+    }
+    
+    #comunidadPage .encabezado h1{
+        margin-bottom: .6em;
+    }
+    
+    #comunidadPage .encabezado p{
+        margin-bottom: 1em;
+    }
+    
+    #compraonlinePage .circle-box>div h1 .children{
+        font-size: 4em;
+    }
+    
+    #compraonlinePage .circle-box>div img{
+        width: 20%;
+        margin-bottom: 0;
+    }
+    
+    
+    
+    #inicio .slideItem  div.screenSlide>h2 p.poppins{
+        font-size: 30px
+    }
+    
+    #inicio .sliderInfo div.screenSlide #humectacion{
+        margin-top: -1em;
+    }
+    
+    
+    .alturaChica .cardText{
+        width: 100%;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    
+    #elegiProducto .parentBox .box img{
+        width: 60%;
+    }
+    
+    #elegiProducto .parentBox .box h4{
+        margin-bottom: 1.7em;
+        font-size: 20px;
+    }
+    
+    footer .legales .textoLegal{
+        width: 63%;
+    }
+    
+    #seguinos h4{
+        font-size: 70px;
+        line-height: .5em
+    }
+    
+    #contacPage .contentOnline div h1 span{
+        font-size: 36px;
+    }
+    
+    #contacPage .map .datosUtiles ul>img{
+        width: 40%;
+    }
+    
+    .parentSection .volverPagina a{
+        left: 11.5vw;
+    }
+    
+    #mapa{
+        height: 50vh;
+    }
+    
+    #compraonlinePage #circleOrder .contentOnline form>div input {
+        display: block;
+        width: 69%;
+        margin-bottom: 2em;
+        border: none;
+        border-radius: 50px;
+        padding: .5em;
+        margin: 0 auto 2em auto;
+    }
+    
+}
+
+@media(min-width:1650px){
+    .navbar-light .navbar-nav .nav-link{
+        font-size: 20px;
+    }
+    
+    #comunidadPage #seguinos h2 .children{
+        font-size: 4em;
+    }
+    
+    
+}
